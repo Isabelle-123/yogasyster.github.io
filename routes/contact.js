@@ -48,8 +48,6 @@ router.post("/send", (req, res, next) => {
       res.end();
     }
   });
-
-  //res.end("YOU POSTED A CONTACT FORM");
 });
 
 module.exports = router;

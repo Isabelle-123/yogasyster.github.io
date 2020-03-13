@@ -24,7 +24,7 @@ const MyNavbar = styled.nav`
     text-decoration: none;
     color: #fcf8e8;
     margin: 10%;
-    font-size: 1.3rem;
+    font-size: 0.8rem;
   }
 `;
 

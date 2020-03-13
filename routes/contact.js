@@ -7,8 +7,8 @@ var cors = require("cors");
 var smtpTrans = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "isabellecaspersson@gmail.com",
-    pass: "saltisabelle"
+    user: "ingafakesson@gmail.com",
+    pass: "epicenter"
   }
 });
 
@@ -21,7 +21,7 @@ smtpTrans.verify((error, success) => {
 });
 
 router.post("/send", (req, res, next) => {
-  console.log("****INSIDE SEND ROUTER LOGGIN BODY", req.body);
+  //console.log("****INSIDE SEND ROUTER LOGGIN BODY", req.body);
   var name = req.body.data.name;
   var email = req.body.data.email;
   var message = req.body.data.message;
@@ -30,7 +30,8 @@ router.post("/send", (req, res, next) => {
 
   var mailOptions = {
     from: req.body.data.email,
-    to: "isabellecaspersson@gmail.com",
+    sender: req.body.data.email,
+    to: "ingafakesson@gmail.com",
     subject: "Email from yogasyster.se",
     text: req.body.data.message
   };

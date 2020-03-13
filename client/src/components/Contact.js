@@ -92,19 +92,6 @@ const StyleContact = styled.div`
 
   }
 
-  /* 
-#393232
-#4d4545
-vinröd 84142d
-brunrosa 8d6262
-rouge ed8d8d
-puder f3d4d4
-beige ffebd9 
-
-  // "Zeyada",
-  //   "Bellota",
-*/
-
   .contact-button:hover {
     background-color: #8d6262;
     color: white;
@@ -146,7 +133,7 @@ class Contact extends Component {
           alert("Meddelande skickades!");
           this.resetForm();
         } else if (response.data.status === "fail") {
-          alert("Meddelande skickades inte.");
+          alert("Meddelande skickades inte. Vänligen fyll i fältten.");
         }
       });
   }

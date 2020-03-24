@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 
 const Matilda = require("./pics/7.2.jpg");
-
 const StyleHome = styled.section`
 img {
   height: auto;

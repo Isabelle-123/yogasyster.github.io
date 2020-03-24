@@ -3,7 +3,7 @@ import styled from "styled-components";
 //import { StyleHome } from "react-router-dom";
 
 const skogImg = require("./pics/4.DSC_05271.jpg");
-const profilImg = require("./pics/profil.jpg");
+
 
 const StyleHistory = styled.div`
   display: flex;
@@ -15,12 +15,12 @@ const StyleHistory = styled.div`
 
   height: auto;
   
-  .profilImg {
+  /* .profilImg {
     border-radius: 600px;
     height: 10%;
     width: auto;
     margin-top: 6%;
-  }
+  } */
 
   img {
     height: auto;
@@ -48,7 +48,7 @@ const StyleHistory = styled.div`
 
   .namaste {
     font-family: Zeyada;
-    font-size; 100px;
+    font-size: 100px;
     color: #8d6262;
   }
 `;
@@ -68,7 +68,7 @@ beige ffebd9
 const MyHistory = () => {
   return (
     <StyleHistory>
-      <img src={profilImg} className="profilImg" />
+    
       <h1>Det var yogan som hittade mig!</h1>
 
       <p>

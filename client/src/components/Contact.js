@@ -3,11 +3,18 @@ import axios from "axios";
 import styled from "styled-components";
 //import { response } from "express";
 
+const contactPic = require("./pics/contact.jpg");
+
 const StyleContact = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  img {
+  height: auto;
+  width: 100%;
+  display: flex;
+}
   .container {
     display: flex;
     flex-direction: column;
@@ -146,6 +153,7 @@ class Contact extends Component {
     return (
       <div className="container">
         <StyleContact>
+        <img src={contactPic} />
           <section className="contact-container">
             <h1>Kontakta mig</h1>
             <h2>Mejl: matildaeden@gmail.com</h2>

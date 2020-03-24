@@ -20,30 +20,40 @@ img {
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 1.5em;
     font-family: "Bellota";
     margin-bottom: 1%;
     display: flex;
     align-self: center;
+    color: #84142d;
   }
 
   h1,
   h2,
   h3 {
-    color: #8d6262;
+    /* color: #8d6262; */
     
   }
 
   h2,
   h3 {
+    color: #8d6262;
     display: flex;
-    opacity: 80%;
+    /* opacity: 80%; */
     margin: 5px;
-    font-family: "Arial";
-    /* font-size: 1px; */
+    font-family: "arial";
+    font-size: 1em;
     font-weight: lighter;
     /* line-height: 150%; */
-    
+  }
+
+  h3 {
+    margin-top: 2%;
+    font-weight: bold;
+    font-family: "Bellota";
+    /* color: #84142d; */
+    color: #4d4545;
+
   }
 
   `
@@ -58,7 +68,7 @@ const ContactText = () => {
         <h1>Kontakta mig</h1>
         <h2>Mejl: matildaeden@gmail.com</h2>
         <h2>Telefon: 0704-809205</h2>
-        <h3>Skicka ett meddelande till mig till höger:</h3>
+        <h3>Skicka ett meddelande till mig:</h3>
       </section>
   </div>
   </StyleContactPicText>

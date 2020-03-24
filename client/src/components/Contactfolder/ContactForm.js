@@ -14,8 +14,8 @@ const StyleContactForm = styled.div`
 
   .form-group {
     color: #4d4545;
-    margin-left: 5%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: justify;
     justify-content: flex-end;
     display: flex;

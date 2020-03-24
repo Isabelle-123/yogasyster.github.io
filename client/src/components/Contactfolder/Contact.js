@@ -2,78 +2,79 @@ import React, { Component } from "react";
 import axios from "axios";
 import styled from "styled-components";
 import ContactForm from "./ContactForm";
+import ContactText from "./ContactPicText";
 //import { response } from "express";
 
-const contactPic = require("./pics/contact.jpg");
+
 
 const StyleContact = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  img {
+  /* img {
   height: auto;
   width: 100%;
   display: flex;
-}
-  .container {
+  border-radius: 1000px;
+} */
+  /* .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 1%;
-  }
+  } */
 
-  .contact-container,
+  /* .contact-container,
   #contact-form {
     display: flex;
     flex-direction: column;
-  }
+  } */
 
-  #contact-form {
+  /* #contact-form {
     margin-top: 0%;
    
-  }
+  } */
 
-  h1 {
-    font-size: 3em;
+  /* h1 {
+    font-size: 1.5em;
     font-family: "Bellota";
-    margin-top: ;
     margin-bottom: 1%;
     display: flex;
-  }
+    align-self: center;
+  } */
 
-  h1,
+  /* h1,
   h2,
   h3 {
     color: #8d6262;
-  }
+  } */
 
-  h2,
+  /* h2,
   h3 {
     display: flex;
     opacity: 80%;
     margin: 5px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: light;
     line-height: 150%;
     font-size: 1.5rem;
-  }
+  } */
 
-  .form-group {
+  /* .form-group {
     color: #4d4545;
     margin-left: 15%;
     margin-right: 15%;
     text-align: justify;
-    line-height: 130%;
-    font-size: 1.5rem;
+  
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 5%;
   
-  }
+  } */
 
-  .form-control {
+  /* .form-control {
     display: flex;
     opacity: 90%;
     margin: 5px;
@@ -82,28 +83,27 @@ const StyleContact = styled.div`
     border-radius: 2px;
     border: none;
     width: 300%;
-  }
+  } */
 
-  .contact-button {
+  /* .contact-button {
     width: 80px;
     background-color: #white;
     color: #8d6262;
     line-height: 130%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-self; center;
+    align-self: center;
     margin: 3%;
     border-radius: 5px;
     cursor: pointer;
-
   }
 
   .contact-button:hover {
     background-color: #8d6262;
     color: white;
-  }
+  } */
 `;
 
 class Contact extends Component {
@@ -152,21 +152,15 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="container">
+      <React.Fragment>
         <StyleContact>
-        <img src={contactPic} />
-          <section className="contact-container">
-            <h1>Kontakta mig</h1>
-            <h2>Mejl: matildaeden@gmail.com</h2>
-            <h2>Telefon: 0704-809205</h2>
-            <h3>Skicka ett meddelande till mig:</h3>
-          </section>
-          <ContactForm onSubmit = {this.handleSubmit.bind(this)} name = {this.state.name} onNameChange = {this.onNameChange} 
+        <ContactText />
+        <ContactForm onSubmit = {this.handleSubmit.bind(this)} name = {this.state.name} onNameChange = {this.onNameChange} 
             email = {this.state.email} onEmailChange = {this.onEmailChange} message = {this.state.message} 
             onMessageChange = {this.onMessageChange} handleSubmit = {this.handleSubmit}
             />
         </StyleContact>
-      </div>
+        </React.Fragment>
     );
   }
 }

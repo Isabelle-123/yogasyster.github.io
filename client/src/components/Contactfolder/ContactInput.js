@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ContactInput = ({htmlFor, type, title, value, OnChange}) => (
+const ContactInput = ({htmlFor, type, title, value, OnChange, ariaDescribedby=""}) => (
   <div className="form-group">
   <label htmlFor={htmlFor}>{title}</label>
   <input
@@ -8,6 +8,7 @@ const ContactInput = ({htmlFor, type, title, value, OnChange}) => (
     className="form-control"
     value={value}
     onChange={OnChange}
+    aria-describedby = {ariaDescribedby}
   />
 </div>
 )

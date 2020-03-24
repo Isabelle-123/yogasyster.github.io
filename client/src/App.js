@@ -1,8 +1,5 @@
 import React from "react";
-//import "./App.css";
-//import "./contact.css";
 import Contact from "./components/Contact";
-import ContactMe from "./components/Contact";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import MyHistory from "./components/MyHistory";

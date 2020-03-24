@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import styled from "styled-components";
+import ContactForm from "./ContactForm";
 //import { response } from "express";
 
 const contactPic = require("./pics/contact.jpg");
@@ -140,7 +141,7 @@ class Contact extends Component {
           alert("Meddelande skickades!");
           this.resetForm();
         } else if (response.data.status === "fail") {
-          alert("Meddelande skickades inte. Vänligen fyll i fältten.");
+          alert("Meddelande skickades inte. Vänligen fyll i fälten.");
         }
       });
   }
@@ -160,50 +161,10 @@ class Contact extends Component {
             <h2>Telefon: 0704-809205</h2>
             <h3>Skicka ett meddelande till mig:</h3>
           </section>
-
-          <form
-            id="contact-form"
-            onSubmit={this.handleSubmit.bind(this)}
-            method="POST"
-          >
-            <div className="form-group">
-              <label htmlFor="name">Namn</label>
-              <input
-                type="text"
-                className="form-control"
-                value={this.state.name}
-                onChange={this.onNameChange}
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="exampleInputEmail1">Din mejladress</label>
-              <input
-                type="email"
-                className="form-control"
-                value={this.state.email}
-                aria-describedby="emailHelp"
-                onChange={this.onEmailChange}
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="message">Meddelande</label>
-              <textarea
-                className="form-control"
-                value={this.state.message}
-                rows="5"
-                onChange={this.onMessageChange}
-              ></textarea>
-            </div>
-            <div className="form-group">
-              <button
-                type="submit"
-                className="contact-button"
-                onSubmit={this.handleSubmit}
-              >
-                Sänd
-              </button>
-            </div>
-          </form>
+          <ContactForm onSubmit = {this.handleSubmit.bind(this)} name = {this.state.name} onNameChange = {this.onNameChange} 
+            email = {this.state.email} onEmailChange = {this.onEmailChange} message = {this.state.message} 
+            onMessageChange = {this.onMessageChange} handleSubmit = {this.handleSubmit}
+            />
         </StyleContact>
       </div>
     );

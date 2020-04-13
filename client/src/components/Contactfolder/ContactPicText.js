@@ -20,7 +20,7 @@ img {
   }
 
   h1 {
-    font-size: 1.5em;
+    font-size: 3em;
     font-family: "Bellota";
     margin-bottom: 1%;
     display: flex;

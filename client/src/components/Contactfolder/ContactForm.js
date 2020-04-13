@@ -57,7 +57,7 @@ const StyleContactForm = styled.div`
 
   `
 
-const ContactForm = ( {onSubmit, name, onNameChange, email, onEmailChange, message, onMessageChange, handleSubmit }) => (
+const ContactForm = ({ onSubmit, name, onNameChange, email, onEmailChange, message, onMessageChange, handleSubmit }) => (
   <StyleContactForm>
   <form
     id="contact-form"

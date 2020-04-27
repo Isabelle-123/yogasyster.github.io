@@ -10,6 +10,7 @@ const StyleContactForm = styled.div`
     float: right;
     display: flex;
     flex-direction: column;
+    margin-top: 5%;
   }
 
   .form-group {

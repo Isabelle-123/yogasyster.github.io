@@ -9,22 +9,24 @@ const MyNavbar = styled.nav`
 
   .nav-links {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
     margin: 0% 10% 0% 10%;
+
   }
 
-  .logo {
+ ${'' /* .logo {
     font-size: 2 vh;
-  }
+  }  */}
 
   .links {
     display: flex;
     text-decoration: none;
     color: #fcf8e8;
     margin: 10%;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 `;
 
@@ -55,12 +57,3 @@ const Navbar = () => {
 
 export default Navbar;
 
-/* 
-#393232
-#4d4545
-brunrosa 8d6262
-rouge ed8d8d
-puder f3d4d4
-beige ffebd9 
-
-f3d4d4*/

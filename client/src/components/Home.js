@@ -33,12 +33,21 @@ h3 {
 
 h2,
 h3 {
-  display: flex;
+  
   opacity: 80%;
-  margin: 5px;
-  font-family: "Bellota";
+
+  ${'' /* font-family: "Bellota"; */}
+  font-size: 2rem;
+}
+
+h3 {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
   font-size: 1.5rem;
 }
+
+
 `;
 
 const Home = () => {
@@ -49,7 +58,7 @@ const Home = () => {
           <img src={Matilda} />
           <h1>Yogasyster</h1>
           <h2>Utbildad Yogalärare</h2>
-          <h3>Legitimerad Arbetsterapeut och massör </h3>
+          <h3>Legitimerad Arbetsterapeut och massör</h3>
           {/* <h3>Massör</h3> */}
         </section>
       </StyleHome>

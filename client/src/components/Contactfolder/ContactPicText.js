@@ -20,8 +20,7 @@ img {
   }
 
   h1 {
-    font-size: 3em;
-    font-family: "Bellota";
+    font-size: 2em;
     margin-bottom: 1%;
     display: flex;
     align-self: center;
@@ -68,7 +67,7 @@ const ContactText = () => {
         <h1>Kontakta mig</h1>
         <h2>Mejl: matildaeden@gmail.com</h2>
         <h2>Telefon: 0704-809205</h2>
-        <h3>Skicka ett meddelande till mig:</h3>
+        {/* <h3>Skicka ett meddelande till mig:</h3> */}
       </section>
   </div>
   </StyleContactPicText>

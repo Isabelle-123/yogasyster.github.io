@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 //import { StyleHome } from "react-router-dom";
 
-const skogImg = require("./pics/4.DSC_05271.jpg");
+const omMatildaEden = require("./pics/om-Matilda-Edén.jpg");
 
 
 const StyleHistory = styled.div`
@@ -14,26 +14,18 @@ const StyleHistory = styled.div`
   margin: 2px, 3px, 0px 3px;
 
   height: auto;
-  
-  /* .profilImg {
-    border-radius: 600px;
-    height: 10%;
-    width: auto;
-    margin-top: 6%;
-  } */
 
   img {
     height: auto;
-    width: 50%;
+    width: 100%;
     display: flex;
-    border-radius: 5px;
-    margin: 1%;
   }
 
   h1 {
     color: #84142d;
     font-family: Bellota;
-    font-size; 5rem;
+    font-size: 1.3rem;
+    
   }
 
   p {
@@ -42,14 +34,24 @@ const StyleHistory = styled.div`
     margin-right: 15%;
     text-align: justify;
     line-height: 130%;
-    font-size: 1.5rem;
+    font-size: 1rem;
 
   }
 
   .namaste {
     font-family: Zeyada;
-    font-size: 100px;
+    font-size: 25px;
     color: #8d6262;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .matilda {
+    font-family: Zeyada;
+    font-size: 25px;
+    color: #8d6262;
+    margin: 0%;
+    padding: 0%;
   }
 `;
 
@@ -68,7 +70,8 @@ beige ffebd9
 const MyHistory = () => {
   return (
     <StyleHistory>
-    
+     <img src={omMatildaEden} />
+
       <h1>Det var yogan som hittade mig!</h1>
 
       <p>
@@ -92,7 +95,7 @@ const MyHistory = () => {
         dvd:n, köper yogatidningar och får frågan, vill du följa med till
         Indien?
       </p>
-      <img src={skogImg} />
+     
       <p>
         Varför inte göra ett nytt försök till att hitta den “inre kompassen” på
         andra sidan jorden? Vi checkar in på ett ashram i Rishikesh och vänder
@@ -112,12 +115,13 @@ const MyHistory = () => {
       <p>
         {" "}
         Att få jobba med kombinera mina erfarenheter som arbetsterapeut inom
-        rehabilitering i sjukvårdensvärld med kunskaperna som yogalärare är
+        rehabilitering i sjukvårdens värld med kunskaperna som yogalärare är
         drömmen. Jag vill vara med och bidra till att fler får upp ögonen för
         ”the power of yoga” och även hittar verktygen till att implementera det
         i sin vardag utanför mattan!  
       </p>
-      <h1 className="namaste"> Namasté Matilda Edén</h1>
+      <h2 className="namaste"> Namasté</h2>
+      <h3 className="matilda"> Matilda Edén</h3>
     </StyleHistory>
   );
 };

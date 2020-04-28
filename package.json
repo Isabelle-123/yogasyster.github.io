@@ -7,19 +7,22 @@
   },
   "dependencies": {
     "body-parser": "^1.19.0",
-    "cookie-parser": "~1.4.4",
+    "clean-css": "^4.2.3",
+    "constantinople": "^4.0.1",
+    "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
+    "minimist": "^1.2.5",
     "morgan": "~1.9.1",
-    "nodemailer": "^6.4.5",
-    "nodemon": "^2.0.2",
+    "nodemailer": "^6.4.6",
+    "nodemon": "^2.0.3",
+    "pug": "^2.0.4",
     "react-router-dom": "^5.1.2",
+    "styled-normalize": "^8.0.7",
+    "uglify-js": "^3.9.1",
     "webfontloader": "^1.6.28"
-  },
-  "devDependencies": {
-    "styled-components": "^5.1.0"
   }
 }

@@ -5,8 +5,12 @@ import Navbar from "./components/Navbar";
 import MyHistory from "./components/MyHistory";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
+import { Normalize } from 'styled-normalize'
+
 function App() {
   return (
+    <>
+    <Normalize />
     <BrowserRouter>
       <Navbar />
 
@@ -22,6 +26,7 @@ function App() {
         </Route>
       </Switch>
     </BrowserRouter>
+    </>
   );
 }
 

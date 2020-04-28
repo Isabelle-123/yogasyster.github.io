@@ -15,23 +15,16 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0%
-    width 30px;
   }
 
   h1 {
-    font-size: 2em;
-    margin-bottom: 1%;
+    font-family: Zeyada;
+    font-size: 1.5em;
     display: flex;
     align-self: center;
     color: #84142d;
-  }
-
-  h1,
-  h2,
-  h3 {
-    /* color: #8d6262; */
-    
+    margin-top: 2%;
+    margin-bottom: 0%;
   }
 
   h2,
@@ -41,7 +34,7 @@ img {
     /* opacity: 80%; */
     margin: 5px;
     font-family: "arial";
-    font-size: 1em;
+    font-size: 0.7em;
     font-weight: lighter;
     /* line-height: 150%; */
   }

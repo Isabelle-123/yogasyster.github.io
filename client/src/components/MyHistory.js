@@ -23,8 +23,10 @@ const StyleHistory = styled.div`
 
   h1 {
     color: #84142d;
-    font-family: Bellota;
-    font-size: 1.3rem;
+    font-family: Zeyada;
+    font-size: 1.5rem;
+    margin-top: 2%;
+    margin-bottom: 0%;
     
   }
 
@@ -34,23 +36,24 @@ const StyleHistory = styled.div`
     margin-right: 15%;
     text-align: justify;
     line-height: 130%;
-    font-size: 1rem;
+    font-size: 0.7rem;
 
   }
 
   .namaste {
     font-family: Zeyada;
-    font-size: 25px;
-    color: #8d6262;
-    margin: 0%;
+    font-size: 1rem;
+    color: #393232;
+    margin: 2% 0 0 0;
     padding: 0%;
   }
 
   .matilda {
     font-family: Zeyada;
-    font-size: 25px;
-    color: #8d6262;
-    margin: 0%;
+    font-size: 1rem;
+    ${'' /* color: #8d6262; */}
+    color: #393232;
+    margin: 0 0 2% 0;
     padding: 0%;
   }
 `;
@@ -72,7 +75,7 @@ const MyHistory = () => {
     <StyleHistory>
      <img src={omMatildaEden} />
 
-      <h1>Det var yogan som hittade mig!</h1>
+      <h1>Det var yogan som hittade mig</h1>
 
       <p>
         {" "}

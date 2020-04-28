@@ -17,9 +17,9 @@ const MyNavbar = styled.nav`
 
   }
 
- ${'' /* .logo {
+ /* .logo {
     font-size: 2 vh;
-  }  */}
+  }  */
 
   .links {
     display: flex;

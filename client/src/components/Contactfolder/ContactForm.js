@@ -11,6 +11,8 @@ const StyleContactForm = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 5%;
+    margin-bottom: 10%;
+
   }
 
   .form-group {
@@ -23,13 +25,15 @@ const StyleContactForm = styled.div`
     flex-direction: column;
     align-items: center;
     margin-top: 5%;
+    font-size: 0.7em;
   }
 
   .form-control {
     display: flex; 
     opacity: 90%; 
     margin: 5px;
-    font-size: 100%;
+    font-size: 1em;
+    padding: 5%;
     font-weight: lighter;
     border-radius: 2px;
     border: none;
@@ -41,7 +45,7 @@ const StyleContactForm = styled.div`
     background-color: white;
     color: #8d6262;
     line-height: 130%;
-    font-size: 1rem;
+    font-size: 0.7em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,6 +53,10 @@ const StyleContactForm = styled.div`
     margin: 3%;
     border-radius: 5px;
     cursor: pointer;
+  }
+
+  . label {
+    font-size: 0.7em;
   }
 
   .contact-button:hover {

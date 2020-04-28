@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-
 const Matilda = require("./pics/7.2.jpg");
 const StyleHome = styled.section`
 img {
@@ -20,7 +19,7 @@ img {
 h1 {
   font-size: 3em;
   font-family: "Bellota";
-  margin-top: 2%;
+  margin-top: 1%;
   margin-bottom: 1%;
   display: flex;
 }

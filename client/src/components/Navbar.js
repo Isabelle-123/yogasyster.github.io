@@ -3,9 +3,26 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const MyNavbar = styled.nav`
-  background: #393232;
-  color: #ffebd9;
+  background: #4d4545;
   height: auto;
+  opacity: 60%;
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+
+/* 
+#393232
+#4d4545
+vinröd 84142d
+brunrosa 8d6262
+rouge ed8d8d
+puder f3d4d4
+beige ffebd9 
+
+  // "Zeyada",
+  //   "Bellota",
+*/
 
   .nav-links {
     display: flex;
@@ -24,7 +41,8 @@ const MyNavbar = styled.nav`
   .links {
     display: flex;
     text-decoration: none;
-    color: #fcf8e8;
+    color: white;
+    opacity: none;
     margin: 10%;
     font-size: 0.7rem;
   }

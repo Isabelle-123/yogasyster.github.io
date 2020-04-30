@@ -1,48 +1,51 @@
-import React from "react";
+import React, {useEffect} from "react";
 import styled from "styled-components";
 //import { StyleHome } from "react-router-dom";
 
-const omMatildaEden = require("./pics/om-Matilda-Edén.jpg");
-
+const omYogasyster = require("./pics/om-yogasyster-matilda-edén.jpg");
+const omYogasysterBig = require("./pics/om-yogasyster-matilda.jpg");
 
 const StyleHistory = styled.div`
   display: flex;
-
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 2px, 3px, 0px 3px;
 
-  height: auto;
-
-  img {
+  .pic-big-screen {
+    display: none;
+  }
+  
+  .pic-small-screen {
     height: auto;
     width: 100%;
     display: flex;
   }
 
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+
   h1 {
     color: #84142d;
     font-family: Zeyada;
     font-size: 1.5rem;
-    margin-top: 2%;
+    margin-top: 3%;
     margin-bottom: 0%;
-    
   }
 
   p {
     color: #393232;
-    margin-left: 15%;
-    margin-right: 15%;
     text-align: justify;
     line-height: 130%;
-    font-size: 0.7rem;
-
+    font-size: 0.9em;
   }
 
   .namaste {
     font-family: Zeyada;
-    font-size: 1rem;
+    font-size: 1.2em;
     color: #393232;
     margin: 2% 0 0 0;
     padding: 0%;
@@ -50,40 +53,74 @@ const StyleHistory = styled.div`
 
   .matilda {
     font-family: Zeyada;
-    font-size: 1rem;
-    ${'' /* color: #8d6262; */}
+    font-size: 1.2em;
     color: #393232;
     margin: 0 0 2% 0;
-    padding: 0%;
   }
+
+  ${'' /* @media only screen and (min-width: 1025px) { */}
+  @media only screen and (min-width: 1441px) {
+    display: flex;
+    flex-direction: row;
+
+  justify-content: center;
+
+    .pic-big-screen {
+      display: inherit;
+ 
+      height: 700px;
+      ${'' /* width: 40%;
+      height: auto; */}
+      margin: 5% 0% 5% 5%;
+      border-radius: 5px;
+    }
+  
+    .pic-small-screen {
+    display: none;
+    }
+
+    .text-container {
+      ${'' /* width: 60%; */}
+      width: 600px;
+      margin: 5% 5% 5% 5%;
+      ${'' /* font-size: 1em; */}
+      padding: 0;
+    }
+
+    h1 {
+    color: #84142d;
+    font-family: Zeyada;
+    font-size: 2.5em;
+  }
+
+    .namaste, .matilda {
+      margin-top: 0;
+      ${'' /* align-self: flex-end; */}
+    }
+  }
+
+}
 `;
 
-/* 
-#393232
-#4d4545
-vinröd 84142d
-brunrosa 8d6262
-rosa ed8d8d
-puder f3d4d4
-beige ffebd9 
-
- // "Zeyada",
-  //   "Bellota",*/
 
 const MyHistory = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
+    <>
     <StyleHistory>
-     <img src={omMatildaEden} />
-
+     <img className='pic-small-screen' src={omYogasyster} alt="Yogasyster Matilda mediterar i skogen" />
+     <img className='pic-big-screen' src={omYogasysterBig} alt="Yogasyster Matilda mediterar i skogen"/>
+      <section className='text-container'>
       <h1>Det var yogan som hittade mig</h1>
 
       <p>
-        {" "}
         En sökande person, med höga krav på sig själv, som alltid varit upptagen
         av 1000 tankar samtidigt och oroat sig för framtiden. Innan yogan kom in
         i bilden prövade jag på strategin “resa till andra platser för att hitta
         mig själv”. Den där “inre kompassen” borde väl ändå finnas på andra
-        sidan jorden?{" "}
+        sidan jorden?
       </p>
       <p>
         Efter varje resa inser jag att i ryggsäcken ligger också mitt inre
@@ -105,10 +142,9 @@ const MyHistory = () => {
         nu uppmärksamheten inåt. Jag öppnas upp för en värld där asanas är ett
         verktyg för att komma djupare i sin egen meditation och spirituella
         sökande. På min tallrik serveras ett helhetstänk som jag i så många år
-        har letat efter och som jag fortfarande vill lära mig mer om.{" "}
+        har letat efter och som jag fortfarande vill lära mig mer om.
       </p>
       <p>
-        {" "}
         Inom yogan hittar jag svar och strategier till att våga vara kvar i mig
         själv, vara i nuet, acceptera tankar och jag lär mig nya saker hela
         tiden! Jag är fortfarande så tacksam för att jag och yogan hittade
@@ -116,7 +152,6 @@ const MyHistory = () => {
         att även lära ut yoga till andra.{" "}
       </p>
       <p>
-        {" "}
         Att få jobba med kombinera mina erfarenheter som arbetsterapeut inom
         rehabilitering i sjukvårdens värld med kunskaperna som yogalärare är
         drömmen. Jag vill vara med och bidra till att fler får upp ögonen för
@@ -125,7 +160,9 @@ const MyHistory = () => {
       </p>
       <h2 className="namaste"> Namasté</h2>
       <h3 className="matilda"> Matilda Edén</h3>
+      </section>
     </StyleHistory>
+    </>
   );
 };
 

@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
 
-const contactPic = require("../pics/contactmedium.jpg");
+const contactPic = require("../pics/kontakta-yogasyster-matilda.jpg");
 
 const StyleContactPicText = styled.div`
 
@@ -55,9 +55,9 @@ const ContactText = () => {
   return (
     <StyleContactPicText>
     <div className = "container">
-      <img src={contactPic} />
+      <img src={contactPic} alt="Yogasyster Matilda vilar på klipporna i Lysekil"/>
       <section className="contact-container">
-        <h1>Kontakta mig</h1>
+        <h1>Kontakta Yogasyster</h1>
         <h2>Mejl: matildaeden@gmail.com</h2>
         <h2>Telefon: 0704-809205</h2>
         {/* <h3>Skicka ett meddelande till mig:</h3> */}

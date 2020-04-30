@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const MyNavbar = styled.nav`
   background: #4d4545;
@@ -11,7 +11,7 @@ const MyNavbar = styled.nav`
   position: fixed;
   width: 100%;
 
-/* 
+  /* 
 #393232
 #4d4545
 vinröd 84142d
@@ -31,10 +31,9 @@ beige ffebd9
     align-items: center;
     list-style: none;
     margin: 0% 10% 0% 10%;
-
   }
 
- /* .logo {
+  /* .logo {
     font-size: 2 vh;
   }  */
 
@@ -52,19 +51,24 @@ const Navbar = () => {
   return (
     <MyNavbar>
       {/* <div className="logo">Yogasyster </div> */}
-      <ul className="nav-links">
+      <ul className='nav-links'>
         <li>
-          <Link to="/" className="links">
+          <Link to='/' className='links'>
             Hem
           </Link>
         </li>
         <li>
-          <Link to="/MyHistory" className="links">
+          <Link to='/MyHistory' className='links'>
             Om mig
           </Link>
         </li>
         <li>
-          <Link to="/Contact" className="links">
+          <Link to='/Classes' className='links'>
+            Yogaklasser
+          </Link>
+        </li>
+        <li>
+          <Link to='/Contact' className='links'>
             Kontakt
           </Link>
         </li>
@@ -74,4 +78,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

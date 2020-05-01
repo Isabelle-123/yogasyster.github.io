@@ -8,13 +8,25 @@ The site has frontend and a backend with Nodemailer. For the backend I have use 
 
 <img src="./client/src/components/pics/preview.jpg" alt="preview" width="600"/>
 
-## 👨‍💻 Tech stack
+## 👨‍💻 Search engine optimaztion (SEO)
+
+Great SEO is important to increase high quality traffic on the site. It is in both the web page owner and the user interest that the right user finds the right web page, and that the page will reach the right user.
+
+Since the site is for a startup I put some work in to get a high SEO. I put some extra energy on:
+
+- well written description, title and alt tags
+- responsiveness
+- HTML semantics
+- nameing convention on pictures
+
+## 🗄️ Tech stack
 
 - React (Functional and class components, Hooks, Routes)
 - Styled Components
+- Flexbox
 - Express
 - Node.js
-- Nodemailer (it's a module for Node.js applications to allow email sending.)
+- Nodemailer (a module for Node.js applications to allow email sending)
 
 ## 🧪 Testing
 

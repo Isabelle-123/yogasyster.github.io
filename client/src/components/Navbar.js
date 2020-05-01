@@ -5,32 +5,18 @@ import { Link } from 'react-router-dom';
 const MyNavbar = styled.nav`
   background: #4d4545;
   height: auto;
-  opacity: 60%;
+  opacity: 70%;
   top: 0;
   z-index: 100;
   position: fixed;
   width: 100%;
 
-  /* 
-#393232
-#4d4545
-vinröd 84142d
-brunrosa 8d6262
-rouge ed8d8d
-puder f3d4d4
-beige ffebd9 
-
-  // "Zeyada",
-  //   "Bellota",
-*/
-
   .nav-links {
+    list-style: none;
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
-    list-style: none;
-    margin: 0% 10% 0% 10%;
+    margin: 5px 0px 5px 0px;
   }
 
   /* .logo {
@@ -39,10 +25,10 @@ beige ffebd9
 
   .links {
     display: flex;
+
     text-decoration: none;
     color: white;
     opacity: none;
-    margin: 10%;
     font-size: 0.7rem;
   }
 `;

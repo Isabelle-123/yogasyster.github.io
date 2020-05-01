@@ -23,28 +23,25 @@ const StyleClasses = styled.div`
     justify-content: center;
     color: #84142d;
     font-family: Zeyada;
-    font-size: 3rem;
-    margin-top: 3%;
-    margin-bottom: 0%;
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 0;
   }
   .container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    ${'' /* margin-left: 10%; */}
     width: 100%;
-    ${'' /* justify-content: space-evenly;
-    align-items: center;
-    list-style: none; */}
   }
 
   .card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5%;
-    border: white 1px solid;
+    margin-bottom: 5px;
+    width: 290px;
+    padding: 1%;
   }
 
   .card > img {
@@ -53,10 +50,42 @@ const StyleClasses = styled.div`
   }
 
   h3 {
+    color: #8d6262;
+    font-size: 1.3em;
+    margin-top: 10px;
+  }
+
+  p {
+    display: flex;
     color: #393232;
     text-align: justify;
     line-height: 130%;
     font-size: 0.9em;
+    margin-top: 0;
+  }
+
+  button {
+    width: 80px;
+    background-color: white;
+    color: #8d6262;
+    line-height: 130%;
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    margin: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #8d6262;
+    color: white;
+  }
+
+  button:focus {
+    ${'' /* outline-color: #4d4545; */}
+    outline-color: #f3d4d4;
   }
 `;
 
@@ -89,42 +118,57 @@ class Classes extends Component {
           <div className='card'>
             <h3>Hatha Yoga</h3>
             <img src={björkPic} className='björkPic' alt='x' />
-            <button
-              onClick={() => this.showHide(0)}
-              className='button-primary btn'
-            >
-              {this.changeName()}
+            <button onClick={() => this.showHide(0)}>
+              {/* {this.changeName()}  */}
+              Läs mer
             </button>
-            {this.state.show[0] && <div> teeext</div>}
+
+            {this.state.show[0] && (
+              <p>
+                {' '}
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam,
+                sint voluptate saepe reiciendis officia veritatis facilis vitae
+                veniam. Unde hic laborum debitis explicabo quaerat animi
+                necessitatibus maiores, rerum aliquam exercitationem!
+              </p>
+            )}
           </div>
+
           <div className='card'>
             <h3>Privatlektioner</h3>
             <img src={björkPic} className='björkPic' alt='x' />
-            <button
-              onClick={() => this.showHide(1)}
-              className='button-primary btn'
-            >
-              {this.changeName()}
+            <button onClick={() => this.showHide(1)}>
+              Läs mer
+              {/* {this.changeName()} */}
             </button>
             {this.state.show[1] && (
               <div>
-                <p>text</p>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Quam, sint voluptate saepe reiciendis officia veritatis
+                  facilis vitae veniam. Unde hic laborum debitis explicabo
+                  quaerat animi necessitatibus maiores, rerum aliquam
+                  exercitationem!
+                </p>
               </div>
             )}
           </div>
           <div className='card'>
             <h3>Events</h3>
             <img src={björkPic} className='björkPic' alt='x' />
-            <button
-              onClick={() => this.showHide(2)}
-              className='button-primary btn'
-            >
-              {this.changeName()}
+            <button onClick={() => this.showHide(2)}>
+              Läs mer
+              {/* {this.changeName()} */}
             </button>
             {this.state.show[2] && (
               <div>
-                <p>text</p>
-                <p>text</p>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Quam, sint voluptate saepe reiciendis officia veritatis
+                  facilis vitae veniam. Unde hic laborum debitis explicabo
+                  quaerat animi necessitatibus maiores, rerum aliquam
+                  exercitationem!
+                </p>
               </div>
             )}
           </div>
@@ -136,8 +180,7 @@ class Classes extends Component {
 
 export default Classes;
 
-{
-  /* /* 
+/* /* 
 <li>
 Hatha Yoga
 <button onChange={toggle}>Läs mer</button>
@@ -157,7 +200,7 @@ Privatlektioner
 )}
 </li> }
 */
-  /* 
+/* 
 {<li>
 Events
 <button onClick={() => setShowing(!isShowing)}>Läs mer</button>
@@ -168,4 +211,3 @@ Events
 )}
 </li> } 
 */
-}

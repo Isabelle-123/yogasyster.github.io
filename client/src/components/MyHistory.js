@@ -30,7 +30,6 @@ const StyleHistory = styled.div`
     text-align: center;
   }
 
-
   h1 {
     color: #84142d;
     font-family: Zeyada;

@@ -27,7 +27,7 @@ const StyleClasses = styled.div`
     margin-top: 20px;
     margin-bottom: 0;
   }
-  .container {
+  .card-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -47,6 +47,7 @@ const StyleClasses = styled.div`
   .card > img {
     width: 290px;
     height: auto;
+    border-radius: 5px;
   }
 
   h3 {
@@ -114,7 +115,7 @@ class Classes extends Component {
         <img src={yogaklassPic} alt='Yogasyster Matilda håller i yogaklass' />
 
         <h1>Yogaklasser</h1>
-        <div className='container'>
+        <div className='card-container'>
           <div className='card'>
             <h3>Hatha Yoga</h3>
             <img src={björkPic} className='björkPic' alt='x' />
@@ -125,7 +126,6 @@ class Classes extends Component {
 
             {this.state.show[0] && (
               <p>
-                {' '}
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam,
                 sint voluptate saepe reiciendis officia veritatis facilis vitae
                 veniam. Unde hic laborum debitis explicabo quaerat animi

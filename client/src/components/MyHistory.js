@@ -3,7 +3,7 @@ import styled from 'styled-components';
 //import { StyleHome } from "react-router-dom";
 
 const omYogasyster = require('./pics/om-yogasyster-matilda-edén.jpg');
-const omYogasysterBig = require('./pics/om-yogasyster-matilda.jpg');
+const omYogasysterSmall = require('./pics/om-yogasyster-matilda.jpg');
 
 const StyleHistory = styled.div`
   display: flex;
@@ -11,6 +11,7 @@ const StyleHistory = styled.div`
 
   .pic-big-screen {
     display: none;
+    border-radius: 5px;
   }
   
   .pic-small-screen {
@@ -118,7 +119,7 @@ const MyHistory = () => {
         />
         <img
           className='pic-big-screen'
-          src={omYogasysterBig}
+          src={omYogasysterSmall}
           alt='Yogasyster Matilda mediterar i skogen'
         />
         <section className='text-container'>

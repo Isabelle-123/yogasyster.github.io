@@ -6,7 +6,7 @@ The project started as a "hackday" at School of applied technology. I am still a
 
 The site has frontend and a backend with Nodemailer. For the backend I have use nodemaile to send emails direct to a existing (fake)mail. When the page launch I will change the email and where to store sensitive data.
 
-<img src=".client/src/components/pics/preview.jpg" alt="preview" width="600"/>
+<img src="./client/src/components/pics/preview.jpg" alt="preview" width="600"/>
 
 ## 👨‍💻 Tech stack
 

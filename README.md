@@ -10,11 +10,11 @@ The site has frontend and a backend with Nodemailer. For the backend I have use 
 
 ## 👨‍💻 Tech stack
 
-React (Functional and class components, Hooks, Routes)
-Styled Components
-Express
-Node.js
-Nodemailer (it's a module for Node.js applications to allow email sending.)
+- React (Functional and class components, Hooks, Routes)
+- Styled Components
+- Express
+- Node.js
+- Nodemailer (it's a module for Node.js applications to allow email sending.)
 
 ## 🧪 Testing
 

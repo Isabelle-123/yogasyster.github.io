@@ -26,7 +26,7 @@ The site has frontend and a backend. For the backend I have used Nodemailer to s
 - Flexbox
 - Express
 - Node.js
-- Nodemailer (a module for Node.js applications to allow email sending)
+- Nodemailer
 
 ## 🧪 Testing
 

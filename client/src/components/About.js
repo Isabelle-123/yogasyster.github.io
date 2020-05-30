@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
-import styled from 'styled-components';
+import React, { useEffect } from 'react'
+import styled from 'styled-components'
 //import { StyleHome } from "react-router-dom";
 
-const omYogasyster = require('./pics/om-yogasyster-matilda-edén.jpg');
-const omYogasysterSmall = require('./pics/om-yogasyster-matilda.jpg');
+const omYogasyster = require('./pics/om-yogasyster-matilda-edén.jpg')
+const omYogasysterSmall = require('./pics/om-yogasyster-matilda.jpg')
 
 const StyleHistory = styled.div`
   display: flex;
@@ -60,19 +60,14 @@ const StyleHistory = styled.div`
     margin: 0 0 2% 0;
   }
 
-  ${'' /* @media only screen and (min-width: 1025px) { */}
   @media only screen and (min-width: 1441px) {
     display: flex;
     flex-direction: row;
-
-  justify-content: center;
+    justify-content: center;
 
     .pic-big-screen {
       display: inherit;
- 
       height: 700px;
-      ${'' /* width: 40%;
-      height: auto; */}
       margin: 5% 0% 5% 5%;
       border-radius: 5px;
     }
@@ -82,17 +77,23 @@ const StyleHistory = styled.div`
     }
 
     .text-container {
-      ${'' /* width: 60%; */}
       width: 600px;
       margin: 5% 5% 5% 5%;
-      ${'' /* font-size: 1em; */}
       padding: 0;
     }
 
     h1 {
-    color: #84142d;
+    ${'' /* color: #84142d;
     font-family: Zeyada;
-    font-size: 2.5em;
+    font-size: 2.5em; */}
+    ${'' /* color: #4d4545; */}
+    color: white;
+    font-family: arial;
+    font-size: 2em;
+    font-weight: 100;
+    padding: 10px;
+    background: #4d4545;
+    opacity: 70%;
   }
 
     .namaste, .matilda {
@@ -102,12 +103,12 @@ const StyleHistory = styled.div`
   }
 
 }
-`;
+`
 
-const MyHistory = () => {
+const About = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <StyleHistory>
@@ -173,7 +174,7 @@ const MyHistory = () => {
         </section>
       </StyleHistory>
     </>
-  );
-};
+  )
+}
 
-export default MyHistory;
+export default About

@@ -1,14 +1,18 @@
-import React from 'react';
-import Contact from './components/contactFolder/Contact';
-import Home from './components/Home';
-import Navbar from './components/Navbar';
-import MyHistory from './components/MyHistory';
-import Classes from './components//classesFolder/Classes';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import React from 'react'
+import Contact from './components/contactFolder/Contact'
+import Home from './components/Home'
+import Navbar from './components/Navbar'
+import About from './components/About'
+import Classes from './components//classesFolder/Classes'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-import { Normalize } from 'styled-normalize';
+import { Normalize } from 'styled-normalize'
 
 function App() {
+  const NoMatchPage = () => {
+    return <h3>404 - Not found</h3>
+  }
+
   return (
     <>
       <Normalize />
@@ -19,8 +23,8 @@ function App() {
           <Route exact path='/'>
             <Home />
           </Route>
-          <Route path='/myhistory'>
-            <MyHistory />
+          <Route path='/about'>
+            <About />
           </Route>
           <Route path='/classes'>
             <Classes />
@@ -28,10 +32,11 @@ function App() {
           <Route path='/contact'>
             <Contact />
           </Route>
+          <Route component={NoMatchPage} />
         </Switch>
       </BrowserRouter>
     </>
-  );
+  )
 }
 
-export default App;
+export default App

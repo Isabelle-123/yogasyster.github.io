@@ -4,20 +4,32 @@ import styled from 'styled-components';
 // import Hatha from './Hatha';
 // import Privatlektioner from './Privatlektioner';
 
-const yogaklassPic = require('../pics/yogaklass-massage2.jpg');
+const yogaklassPic = require('../pics/yogaklass-massage-yogasyster.jpg');
+const yogaklassPicSmall = require('../pics/yogaklass-massage-yogasyster-matilda.jpg');
 // const hathaPic = require('../pics/björk.jpg');
 // const privatPic = require('../pics/björk.jpg');
 // const eventPic = require('../pics/björk.jpg');
 const björkPic = require('../pics/björk.jpg');
 
 const StyleClasses = styled.div`
-  img {
+  .pic-big-screen {
+    display: none;
+  }
+  
+  .pic-small-screen {
     height: auto;
     width: 100%;
     display: flex;
+
+    ${
+      '' /* height: auto;
+    width: 100%;
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
+    }
   }
+  
   h1 {
     display: flex;
     justify-content: center;
@@ -88,6 +100,18 @@ const StyleClasses = styled.div`
     ${'' /* outline-color: #4d4545; */}
     outline-color: #f3d4d4;
   }
+
+  @media only screen and (min-width: 1441px) {
+    .pic-big-screen {
+      height: auto;
+      width: 100%;
+      display: flex;
+
+    }
+  
+    .pic-small-screen {
+      display: none;
+    }
 `;
 
 class Classes extends Component {
@@ -112,12 +136,21 @@ class Classes extends Component {
   render() {
     return (
       <StyleClasses>
-        <img src={yogaklassPic} alt='Yogasyster Matilda håller i yogaklass' />
+        <img
+          src={yogaklassPic}
+          className='pic-small-screen'
+          alt='Yogasyster Matilda håller i yogaklass'
+        />
+        <img
+          src={yogaklassPicSmall}
+          className='pic-big-screen'
+          alt='Yogasyster Matilda håller i yogaklass'
+        />
 
         <h1>Yogaklasser</h1>
         <div className='card-container'>
           <div className='card'>
-            <h3>Hatha Yoga</h3>
+            <h3>Kalender</h3>
             <img src={björkPic} className='björkPic' alt='x' />
             <button onClick={() => this.showHide(0)}>
               {/* {this.changeName()}  */}
@@ -135,7 +168,7 @@ class Classes extends Component {
           </div>
 
           <div className='card'>
-            <h3>Privatlektioner</h3>
+            <h3>Hatha Yoga</h3>
             <img src={björkPic} className='björkPic' alt='x' />
             <button onClick={() => this.showHide(1)}>
               Läs mer
@@ -154,7 +187,7 @@ class Classes extends Component {
             )}
           </div>
           <div className='card'>
-            <h3>Events</h3>
+            <h3>Privatlektioner</h3>
             <img src={björkPic} className='björkPic' alt='x' />
             <button onClick={() => this.showHide(2)}>
               Läs mer

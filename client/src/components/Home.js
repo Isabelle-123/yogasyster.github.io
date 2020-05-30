@@ -1,11 +1,12 @@
-import React, { useEffect } from 'react';
-import styled from 'styled-components';
-import { PageSlides, SlideParallaxType } from 'react-page-slides';
+import React, { useEffect } from 'react'
+import styled from 'styled-components'
+import { PageSlides, SlideParallaxType } from 'react-page-slides'
+import { Link } from 'react-router-dom'
 
-const Matilda = require('./pics/hemsida-yogasyster-matilda.jpg');
-const omYogasysterSmall = require('./pics/om-yogasyster-matilda.jpg');
-const yogklassLitenPic = require('./pics/yogaklass-massage-liten.jpg');
-const contactPicSmall = require('./pics/kontakta-yogasyster-matilda-liten.jpg');
+const Matilda = require('./pics/hemsida-yogasyster-matilda.jpg')
+const omYogasysterSmall = require('./pics/om-yogasyster-matilda.jpg')
+const yogklassLitenPic = require('./pics/yogaklass-massage-hem.jpg')
+const contactPicSmall = require('./pics/kontakta-yogasyster-matilda-hem.jpg')
 
 const StyleHome = styled.section`
   ${'' /* img {
@@ -60,7 +61,7 @@ const StyleHome = styled.section`
     padding: 1%;
   }
 
-  .card > img {
+  .img {
     width: 290px;
     height: 320px;
     border-radius: 5px;
@@ -73,12 +74,19 @@ const StyleHome = styled.section`
     margin-top: 10px;
     cursor: pointer;
   }
-`;
+
+  .links {
+    display: flex;
+    text-decoration: none;
+    color: #8d6262;
+    font-size: 0.7em;
+  }
+`
 
 const Home = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    window.scrollTo(0, 0)
+  }, [])
 
   const slides = [
     {
@@ -86,8 +94,8 @@ const Home = () => {
         <StyleHome>
           <section className='hem-container'>
             <h1>Yogasyster</h1>
-            <h2>Utbildad Yogalärare</h2>
-            <h3>Legitimerad Arbetsterapeut och massör</h3>
+            <h2>Hathayoga</h2>
+            <h3>Legitimerad arbetsterapeut och massör</h3>
           </section>
         </StyleHome>
       ),
@@ -100,34 +108,40 @@ const Home = () => {
         <StyleHome>
           <div className='card-container'>
             <section className='card'>
-              <img
-                src={omYogasysterSmall}
-                alt='Yogasyster Matilda mediterar i skogen'
-                onClick={() => (window.location.href = '/MyHistory')}
-              />
-              <h3 onClick={() => (window.location.href = '/MyHistory')}>
-                Om mig
-              </h3>
+              <Link to='/about'>
+                <img
+                  src={omYogasysterSmall}
+                  alt='Yogasyster Matilda mediterar i skogen'
+                  className='img'
+                />
+              </Link>
+              <Link to='/about' className='links'>
+                <h3>Om mig</h3>
+              </Link>
             </section>
             <section className='card'>
-              <img
-                src={yogklassLitenPic}
-                alt='Yogasyster Matilda håller i yogaklass'
-                onClick={() => (window.location.href = '/Classes')}
-              />
-              <h3 onClick={() => (window.location.href = '/Classes')}>
-                Yogaklasser
-              </h3>
+              <Link to='/classes'>
+                <img
+                  src={yogklassLitenPic}
+                  alt='Yogasyster Matilda håller i yogaklass'
+                  className='img'
+                />
+              </Link>
+              <Link to='/classes' className='links'>
+                <h3>Yogaklasser</h3>
+              </Link>
             </section>
             <section className='card'>
-              <img
-                src={contactPicSmall}
-                alt='I Lysekil där en båt är angjord vid en brygga, bredvid vilar Yogasyster Matilda på klipporna'
-                onClick={() => (window.location.href = '/Contact')}
-              />
-              <h3 onClick={() => (window.location.href = '/Contact')}>
-                Kontakt
-              </h3>
+              <Link to='/contact'>
+                <img
+                  src={contactPicSmall}
+                  alt='I Lysekil där en båt är angjord vid en brygga, bredvid vilar Yogasyster Matilda på klipporna'
+                  className='img'
+                />
+              </Link>
+              <Link to='/contact' className='links'>
+                <h3>Kontakt</h3>
+              </Link>
             </section>
           </div>
         </StyleHome>
@@ -136,7 +150,7 @@ const Home = () => {
     {
       content: <div>third page content</div>,
     },
-  ];
+  ]
   return (
     <PageSlides
       enableAutoScroll={true}
@@ -147,6 +161,6 @@ const Home = () => {
         type: SlideParallaxType.reveal,
       }}
     />
-  );
-};
-export default Home;
+  )
+}
+export default Home

@@ -1,10 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const MyNavbar = styled.nav`
   background: #4d4545;
-  height: auto;
   opacity: 70%;
   top: 0;
   z-index: 100;
@@ -25,13 +24,17 @@ const MyNavbar = styled.nav`
 
   .links {
     display: flex;
-
     text-decoration: none;
     color: white;
-    opacity: none;
-    font-size: 0.7rem;
+    font-size: 0.7em;
   }
-`;
+
+  @media only screen and (min-width: 768px) {
+    .links {
+      font-size: 1.5em;
+    }
+  }
+`
 
 const Navbar = () => {
   return (
@@ -44,23 +47,23 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to='/MyHistory' className='links'>
+          <Link to='/about' className='links'>
             Om mig
           </Link>
         </li>
         <li>
-          <Link to='/Classes' className='links'>
+          <Link to='/classes' className='links'>
             Yogaklasser
           </Link>
         </li>
         <li>
-          <Link to='/Contact' className='links'>
+          <Link to='/contact' className='links'>
             Kontakt
           </Link>
         </li>
       </ul>
     </MyNavbar>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

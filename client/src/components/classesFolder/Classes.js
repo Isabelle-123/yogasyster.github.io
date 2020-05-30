@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+import React, { Component } from 'react'
+import styled from 'styled-components'
 // import Events from './Events';
 // import Hatha from './Hatha';
 // import Privatlektioner from './Privatlektioner';
 
-const yogaklassPic = require('../pics/yogaklass-massage-yogasyster.jpg');
-const yogaklassPicSmall = require('../pics/yogaklass-massage-yogasyster-matilda.jpg');
+const yogaklassPic = require('../pics/yogaklass-massage-yogasyster.jpg')
+const yogaklassPicSmall = require('../pics/yogaklass-massage-yogasyster-matilda.jpg')
 // const hathaPic = require('../pics/björk.jpg');
 // const privatPic = require('../pics/björk.jpg');
 // const eventPic = require('../pics/björk.jpg');
-const björkPic = require('../pics/björk.jpg');
+const björkPic = require('../pics/björk.jpg')
 
 const StyleClasses = styled.div`
   .pic-big-screen {
@@ -112,25 +112,25 @@ const StyleClasses = styled.div`
     .pic-small-screen {
       display: none;
     }
-`;
+`
 
 class Classes extends Component {
   constructor(props) {
-    super(props);
-    this.state = { show: [false, false, false] };
+    super(props)
+    this.state = { show: [false, false, false] }
   }
 
   changeName() {
-    let text = 'text ';
-    text += this.state.show === true ? 'hide' : 'show';
-    return text;
+    let text = 'text '
+    text += this.state.show === true ? 'hide' : 'show'
+    return text
   }
   showHide(num) {
     this.setState((prevState) => {
-      const newItems = [...prevState.show];
-      newItems[num] = !newItems[num];
-      return { show: newItems };
-    });
+      const newItems = [...prevState.show]
+      newItems[num] = !newItems[num]
+      return { show: newItems }
+    })
   }
 
   render() {
@@ -207,11 +207,11 @@ class Classes extends Component {
           </div>
         </div>
       </StyleClasses>
-    );
+    )
   }
 }
 
-export default Classes;
+export default Classes
 
 /* /* 
 <li>

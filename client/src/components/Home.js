@@ -15,7 +15,7 @@ const StyleHome = styled.section`
   display: flex;
 } */}
 
-  .hem-container {
+  .container {
     width: 600px;
     display: flex;
     flex-flow: row wrap;
@@ -92,7 +92,7 @@ const Home = () => {
     {
       content: (
         <StyleHome>
-          <section className='hem-container'>
+          <section className='container'>
             <h1>Yogasyster</h1>
             <h2>Hathayoga</h2>
             <h3>Legitimerad arbetsterapeut och massör</h3>

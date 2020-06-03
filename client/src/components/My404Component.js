@@ -15,7 +15,6 @@ const Style404 = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid green;
   }
 
   .msg404 {

@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
+import omYogasyster from './assets/images/om-yogasyster-matilda-edén.jpg'
+import omYogasysterBigScreen from './assets/images/om-yogasyster-matilda.jpg'
 //import { StyleHome } from "react-router-dom";
 
-const omYogasyster = require('./pics/om-yogasyster-matilda-edén.jpg')
-const omYogasysterSmall = require('./pics/om-yogasyster-matilda.jpg')
+//const omYogasyster = require('./pics/om-yogasyster-matilda-edén.jpg')
+//const omYogasysterSmall = require('./pics/om-yogasyster-matilda.jpg')
 
 const StyleHistory = styled.div`
   display: flex;
@@ -119,7 +121,7 @@ const About = () => {
         />
         <img
           className='pic-big-screen'
-          src={omYogasysterSmall}
+          src={omYogasysterBigScreen}
           alt='Yogasyster Matilda mediterar i skogen'
         />
         <section className='text-container'>

@@ -1,7 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
+import contactPic from '../assets/images/kontakta-yogasyster-matilda.jpg'
 
-const contactPic = require('../pics/kontakta-yogasyster-matilda.jpg');
+//const contactPic = require('../pics/kontakta-yogasyster-matilda.jpg');
 
 const StyleContactPicText = styled.div`
   img {
@@ -45,7 +46,7 @@ const StyleContactPicText = styled.div`
     /* color: #84142d; */
     color: #4d4545;
   }
-`;
+`
 
 const ContactText = () => {
   return (
@@ -63,7 +64,7 @@ const ContactText = () => {
         </section>
       </div>
     </StyleContactPicText>
-  );
-};
+  )
+}
 
-export default ContactText;
+export default ContactText

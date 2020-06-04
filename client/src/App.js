@@ -4,7 +4,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Classes from './components//classesFolder/Classes'
 import Contact from './components/contactFolder/Contact'
-import RedirectToNotFound from './components/RedirectToNotFound'
+import RedirectToNotFound from './components/My404RedirectToNotFound'
 import My404Component from './components/My404Component'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 

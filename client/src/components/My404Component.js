@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import björk from './assets/images/björk.jpg'
 
 //import PageNotFound from '../assets/images/PageNotFound'
 
-const björk = require('./pics/björk.jpg')
+// const björk = require('./pics/björk.jpg')
 
 const Style404 = styled.section`
   display: flex;

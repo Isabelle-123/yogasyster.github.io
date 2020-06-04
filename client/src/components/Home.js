@@ -2,11 +2,15 @@ import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import { PageSlides, SlideParallaxType } from 'react-page-slides'
 import { Link } from 'react-router-dom'
+import Matilda from './assets/images/hemsida-yogasyster-matilda.jpg'
+import omYogasysterSmall from './assets/images/om-yogasyster-matilda.jpg'
+import yogklassLitenPic from './assets/images/yogaklass-massage-hem.jpg'
+import contactPicSmall from './assets/images/kontakta-yogasyster-matilda-hem.jpg'
 
-const Matilda = require('./pics/hemsida-yogasyster-matilda.jpg')
-const omYogasysterSmall = require('./pics/om-yogasyster-matilda.jpg')
-const yogklassLitenPic = require('./pics/yogaklass-massage-hem.jpg')
-const contactPicSmall = require('./pics/kontakta-yogasyster-matilda-hem.jpg')
+// const Matilda = require('./pics/hemsida-yogasyster-matilda.jpg')
+// const omYogasysterSmall = require('./pics/om-yogasyster-matilda.jpg')
+// const yogklassLitenPic = require('./pics/yogaklass-massage-hem.jpg')
+// const contactPicSmall = require('./pics/kontakta-yogasyster-matilda-hem.jpg')
 
 const StyleHome = styled.section`
   ${'' /* img {

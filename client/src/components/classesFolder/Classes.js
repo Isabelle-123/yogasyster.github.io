@@ -1,15 +1,21 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+
+import yogaklassPic from '../assets/images/yogaklass-massage-yogasyster.jpg'
+import yogaklassPicSmall from '../assets/images/yogaklass-massage-yogasyster-matilda.jpg'
+import björkPic from '../assets/images/björk.jpg'
+
 // import Events from './Events';
 // import Hatha from './Hatha';
 // import Privatlektioner from './Privatlektioner';
 
-const yogaklassPic = require('../pics/yogaklass-massage-yogasyster.jpg')
-const yogaklassPicSmall = require('../pics/yogaklass-massage-yogasyster-matilda.jpg')
+// const yogaklassPic = require('../pics/yogaklass-massage-yogasyster.jpg')
+// const yogaklassPicSmall = require('../pics/yogaklass-massage-yogasyster-matilda.jpg')
+
 // const hathaPic = require('../pics/björk.jpg');
 // const privatPic = require('../pics/björk.jpg');
 // const eventPic = require('../pics/björk.jpg');
-const björkPic = require('../pics/björk.jpg')
+// const björkPic = require('../pics/björk.jpg')
 
 const StyleClasses = styled.div`
   .pic-big-screen {

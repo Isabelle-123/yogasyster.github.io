@@ -75,7 +75,7 @@ const My404Component = () => {
         <div className='container'>
           <img src={björk} alt='Björkträd i Göteborg' />
           <section className='text-container'>
-            <h1>Hoppsan! Har du gått vilse?</h1>
+            <h1>Hoppsan! Den sida du sökte finns inte.</h1>
             <h2>404</h2>
             <Link className='link' to='/'>
               Ta mig till startsidan

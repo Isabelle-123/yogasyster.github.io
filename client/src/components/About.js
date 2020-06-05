@@ -38,6 +38,12 @@ const StyleHistory = styled.div`
     font-size: 2em;
     margin-top: 20px;
     margin-bottom: 0%;
+
+    color: #393232;
+    opacity: 70%;
+    font-family: arial;
+    font-size: 2em;
+    font-weight: 100;
   }
 
   p {
@@ -89,12 +95,14 @@ const StyleHistory = styled.div`
     font-family: Zeyada;
     font-size: 2.5em; */}
     ${'' /* color: #4d4545; */}
-    color: white;
+    ${'' /* color: white;
+    background: #4d4545; */}
+    color: #393232;
+    
     font-family: arial;
     font-size: 2em;
     font-weight: 100;
     padding: 10px;
-    background: #4d4545;
     opacity: 70%;
   }
 

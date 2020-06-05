@@ -54,7 +54,7 @@ const ContactText = () => {
       <div className='container'>
         <img
           src={contactPic}
-          alt='I Lysekil där en båt är angjord vid en brygga, bredvid vilar Yogasyster Matilda på klipporna'
+          alt='Båt är angjord vid en brygga i Lysekil, bredvid vilar Yogasyster Matilda på klipporna'
         />
         <section className='contact-container'>
           <h1>Kontakta Yogasyster</h1>

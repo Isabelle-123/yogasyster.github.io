@@ -37,6 +37,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <Normalize />
       <Switch>
         <Route component={My404Component} path='/notfound' />
         <Route component={DefaultRoutes} />

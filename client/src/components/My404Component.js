@@ -18,27 +18,52 @@ const Style404 = styled.section`
     align-items: center;
   }
 
-  .msg404 {
+  .text-container {
+    background: rgba(77, 69, 69, 0.8);
     display: flex;
-    color: #8d6262;
-    font-size: 1.3em;
-    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 100px;
+    position: absolute;
+    z-index: 1;
+    padding: 30px;
+  }
+
+  .text-container > h1 {
+    margin: 0px;
   }
 
   .link {
-    color: #8d6262;
-    font-size: 1.3em;
-    margin-top: 10px;
     cursor: pointer;
-    list-style: none;
+    color: white;
+    font-size: 2em;
+    margin-top: 5px;
   }
 
   img {
     height: 100%;
-    box-sizing: border-box;
+    ${'' /* box-sizing: border-box; */}
     max-width: 100%;
     max-height: 100%;
     width: 100%;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .text-container {
+      margin-top: 10px;
+      font-size: 0.4em;
+      padding: 5px;
+    }
+    .text-container > h1 {
+      font-weight: 300;
+    }
+    .text-container > h2 {
+      font-weight: 300;
+    }
+    .text-container > p {
+      font-size: 1.5em;
+    }
   }
 `
 
@@ -48,12 +73,14 @@ const My404Component = () => {
       <Style404>
         {/* <img src={PageNotFound} /> */}
         <div className='container'>
-          <h1 className='msg404'>Hoppsan! Har du gått vilse?</h1>
-          <p className='link'>Felmeddelande 404</p>
-          <p className='link'>
-            <Link to='/'>Gå till startsida</Link>
-          </p>
           <img src={björk} alt='Björkträd i Göteborg' />
+          <section className='text-container'>
+            <h1>Hoppsan! Har du gått vilse?</h1>
+            <h2>404</h2>
+            <Link className='link' to='/'>
+              Ta mig till startsidan
+            </Link>
+          </section>
         </div>
       </Style404>
     </>

@@ -39,6 +39,7 @@ const StyleHistory = styled.div`
     margin-top: 20px;
     margin-bottom: 0%;
 
+${'' /* //maybe this */}
     color: #393232;
     opacity: 70%;
     font-family: arial;

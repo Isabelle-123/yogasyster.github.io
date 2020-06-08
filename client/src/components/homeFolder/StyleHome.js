@@ -119,22 +119,6 @@ export const StyleHome = styled.section`
   h3 {
     font-size: 5vw;
   }
-${
-  '' /* 
-    h1 {
-      font-size: 3em;
-      font-family: 'Bellota';
-    }
-
-    h2 {
-      font-size: 1.5em;
-    }
-
-    h3 {
-      font-size: 1em;
-      font-weight: 400;
-    } */
-}
   }
   
   ${'' /* slide 2 ipad */}

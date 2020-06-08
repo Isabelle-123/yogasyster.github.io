@@ -84,36 +84,10 @@ const StyleHome = styled.section`
     width: 290px;
     height: 320px;
     border-radius: 5px;
-    flex-shrink: 10;
+   
   }
 
-  
-
-${'' /* 970 */}
-  @media only screen and (max-width: 970px) {
-    .card-container {
-      margin-top: 80px;
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    .card {
-      flex-direction: row;
-     
-    }
-
-    .link {
-      flex-direction: row;
-      width: 100%;
-
-    }
-    .link > img { {
-      height: 140px;
-      width: 110px;
-      margin-right: 5%;
-    }
-  }
-
+  ${'' /* slide 1 */}
   @media only screen and (max-width: 425px) {
     .container {
       justify-content: center;
@@ -135,6 +109,57 @@ ${'' /* 970 */}
       font-weight: 400;
     }
   }
+  
+  @media only screen and (max-width: 970px) {
+    .card-container {
+      margin: 80px 0px 0px 0px;
+      align-items: center;
+
+
+    }
+
+    .card {
+      margin: 0;
+      width: auto;
+    }
+
+    .link > img {
+    width: 200px;
+    height: 250px;
+
+
+
+    border-radius: 5px;
+    }
+  }
+
+${'' /* 970 */}
+  @media only screen and (max-width: 767px) {
+    .card-container {
+      margin-top: 80px;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .card {
+     justify-content: center;
+      width: 100%;
+    }
+
+    .link {
+      flex-direction: row;
+      width: 100%;
+
+    }
+    .link > img { {
+      height: 140px;
+      width: 110px;
+      margin-right: 5%;
+      margin-left: 5%;
+    }
+  }
+
+
 `
 
 const Home = () => {

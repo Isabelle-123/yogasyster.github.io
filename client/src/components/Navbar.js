@@ -16,6 +16,7 @@ const MyNavbar = styled.nav`
     justify-content: space-evenly;
     align-items: center;
     margin: 5px 0px 5px 0px;
+    padding: 0;
   }
 
   /* .logo {
@@ -29,7 +30,7 @@ const MyNavbar = styled.nav`
     font-size: 0.7em;
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 769px) {
     .links {
       font-size: 1.5em;
     }

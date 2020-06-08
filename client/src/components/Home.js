@@ -110,31 +110,34 @@ const StyleHome = styled.section`
     }
   }
   
-  @media only screen and (max-width: 970px) {
+  @media  screen and (max-width: 970px) {
     .card-container {
-      margin: 80px 0px 0px 0px;
+      margin-top: 80px;
+      flex-direction: column;
       align-items: center;
-
-
+      height: 100%
     }
-
+    
     .card {
-      margin: 0;
-      width: auto;
+      
+      width: 400px;
     }
 
-    .link > img {
-    width: 200px;
-    height: 250px;
+    .link {
+      flex-direction: row;
+      width: 400px;
 
-
-
-    border-radius: 5px;
+    }
+    .link > img { {
+      height: 180px;
+      width: 160px;
+      margin-right: 5%;
+      margin-left: 5%;
     }
   }
 
 ${'' /* 970 */}
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 425px) {
     .card-container {
       margin-top: 80px;
       flex-direction: column;

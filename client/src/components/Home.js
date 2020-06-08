@@ -57,6 +57,7 @@ const StyleHome = styled.section`
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+    height: 80vh;
     margin-top: 30vh;
   }
 
@@ -69,38 +70,60 @@ const StyleHome = styled.section`
     padding: 1%;
   }
 
-  .img {
+  .link {
+    color: #8d6262;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .link > img {
     width: 290px;
     height: 320px;
     border-radius: 5px;
-    cursor: pointer;
+    flex-shrink: 10;
   }
 
-  .card > h3 {
-    color: #8d6262;
-    font-size: 1.3em;
-    margin-top: 10px;
-    cursor: pointer;
-  }
+  
 
-  .links {
-    display: flex;
-    text-decoration: none;
-    color: #8d6262;
-    font-size: 0.7em;
+${'' /* 970 */}
+  @media only screen and (max-width: 970px) {
+    .card-container {
+      margin-top: 80px;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .card {
+      flex-direction: row;
+     
+    }
+
+    .link {
+      flex-direction: row;
+      width: 100%;
+
+    }
+    .link > img { {
+      height: 140px;
+      width: 110px;
+      margin-right: 5%;
+    }
   }
 
   @media only screen and (max-width: 425px) {
     .container {
       justify-content: center;
-      margin: 15% 0% 0% 0%;
+      margin: 10% 0% 0% 0%;
       width: 90%;
     }
 
     h1 {
       font-size: 3em;
       font-family: 'Bellota';
-      ${'' /* font-family: 'Zeyada'; */}
     }
 
     h2 {
@@ -139,39 +162,30 @@ const Home = () => {
         <StyleHome>
           <div className='card-container'>
             <section className='card'>
-              <Link to='/about'>
+              <Link to='/about' className='link'>
                 <img
                   src={omYogasysterSmall}
                   alt='Yogasyster Matilda mediterar i skogen'
-                  className='img'
                 />
-              </Link>
-              <Link to='/about' className='links'>
-                <h3>Om mig</h3>
+                Om mig
               </Link>
             </section>
             <section className='card'>
-              <Link to='/classes'>
+              <Link to='/classes' className='link'>
                 <img
                   src={yogklassLitenPic}
                   alt='Yogasyster Matilda håller i yogaklass'
-                  className='img'
                 />
-              </Link>
-              <Link to='/classes' className='links'>
-                <h3>Yogaklasser</h3>
+                Yogaklasser
               </Link>
             </section>
             <section className='card'>
-              <Link to='/contact'>
+              <Link to='/contact' className='link'>
                 <img
                   src={contactPicSmall}
                   alt='I Lysekil där en båt är angjord vid en brygga, bredvid vilar Yogasyster Matilda på klipporna'
-                  className='img'
                 />
-              </Link>
-              <Link to='/contact' className='links'>
-                <h3>Kontakt</h3>
+                Kontakt
               </Link>
             </section>
           </div>

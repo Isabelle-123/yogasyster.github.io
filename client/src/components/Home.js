@@ -136,7 +136,6 @@ const StyleHome = styled.section`
     }
   }
 
-${'' /* 970 */}
   @media only screen and (max-width: 425px) {
     .card-container {
       margin-top: 80px;

@@ -1,46 +1,46 @@
-var createError = require("http-errors");
-var express = require("express");
-var path = require("path");
-var cookieParser = require("cookie-parser");
-var logger = require("morgan");
+var createError = require('http-errors')
+var express = require('express')
+var path = require('path')
+var cookieParser = require('cookie-parser')
+var logger = require('morgan')
 
 // var indexRouter = require("./routes/hello");
-var usersRouter = require("./routes/contact");
+var usersRouter = require('./routes/contact')
 
-var app = express();
-var cors = require("cors");
+var app = express()
+var cors = require('cors')
 
-app.use(cors());
+app.use(cors())
 
-app.use(logger("dev"));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, "client/build")));
+app.use(logger('dev'))
+app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
+app.use(cookieParser())
+app.use(express.static(path.join(__dirname, 'client/build')))
 
 app.use((req, res, next) => {
-  console.log("*****INSIDE SERVER****");
-  next();
-});
+  console.log('*****INSIDE SERVER****')
+  next()
+})
 
 // app.use("/", indexRouter);
-app.use("/contact", usersRouter);
+app.use('/contact', usersRouter)
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
-});
+app.use(function (req, res, next) {
+  next(createError(404))
+})
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get("env") === "development" ? err : {};
+  res.locals.message = err.message
+  res.locals.error = req.app.get('env') === 'development' ? err : {}
 
   // render the error page
-  res.status(err.status || 500);
-  res.send("error");
-});
+  res.status(err.status || 500)
+  res.send('error')
+})
 
-app.listen(3001);
-module.exports = app;
+app.listen(3001)
+module.exports = app

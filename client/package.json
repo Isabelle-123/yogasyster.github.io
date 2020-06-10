@@ -9,10 +9,12 @@
     "axios": "^0.19.2",
     "cors": "^2.8.5",
     "minimist": "^1.2.5",
+    "pug": "^3.0.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-scripts": "3.4.1",
-    "styled-components": "^5.1.0"
+    "styled-components": "^5.1.0",
+    "styled-normalize": "^8.0.7"
   },
   "resolutions": {
     "minimist": "^1.2.5"

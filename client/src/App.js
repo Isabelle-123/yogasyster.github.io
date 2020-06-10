@@ -17,16 +17,16 @@ function App() {
         <Normalize />
         <Navbar />
         <Switch>
-          <Route exact path='/' component={Home}>
+          <Route exact path='/'>
             <Home />
           </Route>
-          <Route path='/about' component={About}>
+          <Route path='/about'>
             <About />
           </Route>
-          <Route path='/classes' component={Classes}>
+          <Route path='/classes'>
             <Classes />
           </Route>
-          <Route path='/contact' component={Contact}>
+          <Route path='/contact'>
             <Contact />
           </Route>
           <Route component={My404RedirectToNotFound} />

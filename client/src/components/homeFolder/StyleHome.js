@@ -163,23 +163,27 @@ export const StyleHome = styled.section`
   @media  screen and (max-width: 970px) {
     .card-container {
       margin-top: 10%;
-      flex-direction: column;
+      flex-direction: row;
+      justify-content:space-evenly;
       align-items: center;
     
     }
     
     .card {
-      width: 400px;
+      width: auto;
+    
     }
 
     .link {
-      flex-direction: row;
-      width: 400px;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.5em;
+      
 
     }
     .link > img { {
-      height: 180px;
-      width: 160px;
+      width: 25vw;
+      height: auto;
       margin-right: 5%;
       margin-left: 5%;
     }
@@ -187,7 +191,7 @@ export const StyleHome = styled.section`
 
 ${'' /* slide 2 mobile view */}
 
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 540px) {
     .card-container {
       margin-top: 15%;
       flex-direction: column;

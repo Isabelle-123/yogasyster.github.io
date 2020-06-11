@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import { StyleHome } from './StyleHome'
 import { PageSlides, SlideParallaxType } from 'react-page-slides'
 import { Link } from 'react-router-dom'
-import Matilda from '../assets/images/hemsida-yogasyster-matilda.jpg'
 import omYogasysterSmall from '../assets/images/om-yogasyster-matilda.jpg'
 import yogklassLitenPic from '../assets/images/yogaklass-massage-hem.jpg'
 import contactPicSmall from '../assets/images/kontakta-yogasyster-matilda-hem.jpg'
@@ -21,16 +20,15 @@ const Home = () => {
     {
       content: (
         <StyleHome>
-          <section className='container'>
-            <h1>Yogasyster</h1>
-            <h2>Hathayoga</h2>
-            <h3>Legitimerad arbetsterapeut och massör</h3>
-          </section>
+          <div className='slide-one-container'>
+            <section className='container'>
+              <h1>Yogasyster</h1>
+              <h2>Hathayoga</h2>
+              <h3>Legitimerad arbetsterapeut och massör</h3>
+            </section>
+          </div>
         </StyleHome>
       ),
-      style: {
-        backgroundImage: `url(${Matilda})`,
-      },
     },
     {
       content: (

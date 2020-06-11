@@ -1,58 +1,59 @@
-import React, { Component } from 'react';
-import axios from 'axios';
-import styled from 'styled-components';
-import ContactForm from './ContactForm';
-import ContactText from './ContactPicText';
+import React, { Component } from 'react'
+import axios from 'axios'
+import styled from 'styled-components'
+import ContactForm from './ContactForm'
+import ContactText from './ContactPicText'
+import Popup from 'reactjs-popup'
 //import { response } from "express";
 
 const StyleContact = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
+`
 
 class Contact extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       name: '',
       email: '',
       message: '',
-    };
+    }
   }
 
   onNameChange = (event) => {
-    this.setState({ name: event.target.value });
-  };
+    this.setState({ name: event.target.value })
+  }
 
   onEmailChange = (event) => {
-    this.setState({ email: event.target.value });
-  };
+    this.setState({ email: event.target.value })
+  }
 
   onMessageChange = (event) => {
-    this.setState({ message: event.target.value });
-  };
+    this.setState({ message: event.target.value })
+  }
 
   handleSubmit(e) {
-    e.preventDefault();
+    e.preventDefault()
     //console.log(this.state);
     axios
       .post('http://localhost:3001/contact/send', {
         data: this.state,
       })
       .then((response) => {
-        console.log(response.data);
+        console.log(response.data)
         if (response.data.status === 'success') {
-          alert('Meddelande skickades!');
-          this.resetForm();
+          alert('Meddelande skickades!')
+          this.resetForm()
         } else if (response.data.status === 'fail') {
-          alert('Meddelande skickades inte. Vänligen fyll i fälten.');
+          alert('Någit gick fel! Meddelande skickades inte.')
         }
-      });
+      })
   }
 
   resetForm() {
-    this.setState({ name: '', email: '', message: '' });
+    this.setState({ name: '', email: '', message: '' })
   }
 
   render() {
@@ -72,8 +73,8 @@ class Contact extends Component {
           />
         </StyleContact>
       </React.Fragment>
-    );
+    )
   }
 }
 
-export default Contact;
+export default Contact

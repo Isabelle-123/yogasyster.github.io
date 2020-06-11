@@ -23,6 +23,7 @@ const oauth2Client = new OAuth2(
 oauth2Client.setCredentials({
   refresh_token: process.env.REFRESH_TOKEN,
 })
+
 const accessToken = oauth2Client.getAccessToken()
 
 const smtpTrans = nodemailer.createTransport({

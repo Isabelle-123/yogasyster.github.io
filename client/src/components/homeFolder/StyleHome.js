@@ -1,31 +1,30 @@
 import styled from 'styled-components'
+import Matilda from '../assets/images/hemsida-yogasyster-matilda.jpg'
 
 export const StyleHome = styled.section`
-  ${'' /* img {
-  height: auto;
-  width: 100%;
-  display: flex;
-} */}
 
-  display: flex;
-
-  flex-direction: column;
-  align-items: center;
+  .slide-one-container {
+    background-image: url(${Matilda});
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
 
   .container {
     width: 40%;
     display: flex;
-    flex-flow: row wrap;
     flex-direction: column;
     align-items: center;
-    margin: 8% 20% 0% 55%;
+    margin: 5% 20% 0% 55%;
     color: #84142d;
   }
 
   h1 {
     font-size: 8vw;
     font-family: 'Bellota';
-    ${'' /* font-family: 'Zeyada'; */}
     margin: 10% 3% 3% 3%;
 
   }
@@ -33,12 +32,13 @@ export const StyleHome = styled.section`
   h2 {
     font-size: 3vw;
     margin: 3%;
+    font-weight: 500;
   }
 
   h3 {
     font-size: 2vw;
     margin-top: 0;
-    font-weight: 400;
+    font-weight: 500;
   }
 
   .card-container {
@@ -74,53 +74,92 @@ export const StyleHome = styled.section`
     width: 290px;
     height: 320px;
     border-radius: 5px;
-   
+  }
+
+
+  ${'' /* slide 1 xl screen */}
+  @media only screen and (max-width: 2440px) {
+    .slide-one-container {
+    background-position: 1%;    
+    }
+    
+    h1 {
+    font-size: 15vh;
+    margin: 0;
+    }
+
+    h2 {
+    font-size: 5vh;
+    margin: 3% 0% 3% 0%;
+    }
+
+    h3 {
+    font-size: 4vh;
+    margin:0;
+    }    
   }
 
   ${'' /* slide 1 tablet */}
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1000px) {
+    .slide-one-container {
+    background-position: 40%;
+    }
+
     .container {
-      justify-content: center;
       margin: 8% 0% 0% 0%;
       width: 90%;
-      ${'' /* color: #794051;
-      color: #A24744; */}
     }
 
     h1 {
-    font-size: 10vw;
+    font-size: 12vh;
     margin: 0;
-  }
+    }
 
-  h2 {
-    font-size: 5vw;
-  }
+    h2 {
+    font-size: 5vh;
+    margin: 2% 0% 1% 0%;
+    }
 
-  h3 {
-    font-size: 3vw;
+    h3 {
+    font-size: 3vh;
+    margin:0;
+    }
   }
+ 
 
   ${'' /* slide 1 mobile */}
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 426px) {
     .container {
-      justify-content: center;
-      margin: 18% 0% 0% 0%;
-      width: 90%;
+      margin: 15% 0% 0% 0%;
     }
 
     h1 {
-    font-size: 15vw;
+    font-size: 18vw;
   }
 
   h2 {
     font-size: 8vw;
+    margin: 5% 0% 1% 0%;
   }
 
   h3 {
-    font-size: 5vw;
+    font-size: 4.5vw;
+    margin: 5% 0% 1% 0%;
   }
   }
+
+  @media only screen and (max-width: 760px) {
+  .slide-one-container {
+    background-image: url(${Matilda});
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  } 
   
+  }
   ${'' /* slide 2 ipad */}
   @media  screen and (max-width: 970px) {
     .card-container {

@@ -46,8 +46,7 @@ export const StyleHome = styled.section`
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 100%;
-    height: 80vh;
+    height: 90vh;
     margin-top: 30vh;
   }
 
@@ -155,18 +154,18 @@ export const StyleHome = styled.section`
     height: 100vh;
     width: 100vw;
     display: flex;
-  flex-direction: column;
-  align-items: center;
+    flex-direction: column;
+    align-items: center;
   } 
   
   }
   ${'' /* slide 2 ipad */}
   @media  screen and (max-width: 970px) {
     .card-container {
-      margin-top: 80px;
+      margin-top: 10%;
       flex-direction: column;
       align-items: center;
-      height: 100%
+    
     }
     
     .card {
@@ -190,7 +189,7 @@ ${'' /* slide 2 mobile view */}
 
   @media only screen and (max-width: 425px) {
     .card-container {
-      margin-top: 80px;
+      margin-top: 15%;
       flex-direction: column;
       align-items: center;
     }

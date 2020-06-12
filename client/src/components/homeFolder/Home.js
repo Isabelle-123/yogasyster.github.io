@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
-import { StyleHome } from './StyleHome'
+import { StyleHomeFirstSlide } from './StyleHomeFirstSlide'
+import { StyleHomeSecondSlide } from './StyleHomeSecondSlide'
+import { StyleHomeThirdSlide } from './StyleHomeThirdSlide'
 import { PageSlides, SlideParallaxType } from 'react-page-slides'
 import { Link } from 'react-router-dom'
 import omYogasysterSmall from '../assets/images/om-yogasyster-matilda.jpg'
@@ -19,7 +21,7 @@ const Home = () => {
   const slides = [
     {
       content: (
-        <StyleHome>
+        <StyleHomeFirstSlide>
           <div className='slide-one-container'>
             <section className='container'>
               <h1>Yogasyster</h1>
@@ -27,12 +29,12 @@ const Home = () => {
               <h3>Legitimerad arbetsterapeut och massör</h3>
             </section>
           </div>
-        </StyleHome>
+        </StyleHomeFirstSlide>
       ),
     },
     {
       content: (
-        <StyleHome>
+        <StyleHomeSecondSlide>
           <div className='card-container'>
             <section className='card'>
               <Link to='/about' className='link'>
@@ -62,11 +64,19 @@ const Home = () => {
               </Link>
             </section>
           </div>
-        </StyleHome>
+        </StyleHomeSecondSlide>
       ),
     },
     {
-      content: <div>third page content</div>,
+      content: (
+        <StyleHomeThirdSlide>
+          <section className='insta-container'>
+            <div className='powr-social-feed' id='9bc6ecef_1591955690'></div>
+          </section>
+
+          {/* <script src='https://www.powr.io/powr.js?platform=react'></script> */}
+        </StyleHomeThirdSlide>
+      ),
     },
   ]
   return (

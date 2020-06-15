@@ -10,7 +10,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import { Normalize } from 'styled-normalize'
 
-function App() {
+const App = () => {
   const DefaultRoutes = () => {
     return (
       <>

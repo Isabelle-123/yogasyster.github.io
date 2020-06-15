@@ -8,8 +8,9 @@ export const StyleHomeSecondSlide = styled.section`
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: 90vh;
-    margin-top: 30vh;
+    align-items: center;
+    height: 100vh;
+   ${'' /* // margin-top: 30vh; */}
   }
 
   .card {
@@ -19,6 +20,7 @@ export const StyleHomeSecondSlide = styled.section`
     margin-bottom: 5px;
     width: 290px;
     padding: 1%;
+
   }
 
   .link {
@@ -40,16 +42,15 @@ export const StyleHomeSecondSlide = styled.section`
   ${'' /* slide 2 ipad */}
   @media  screen and (max-width: 970px) {
     .card-container {
+      display: flex;
       margin-top: 10%;
       flex-direction: row;
       justify-content:space-evenly;
       align-items: center;
-    
     }
     
     .card {
       width: auto;
-    
     }
 
     .link {

@@ -7,7 +7,7 @@ export const StyleHomeFirstSlide = styled.section`
     background-image: url(${Matilda});
     background-size: cover;
     height: 100vh;
-    width: 100vw;
+    ${'' /* width: 100vw; */}
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,9 +24,8 @@ export const StyleHomeFirstSlide = styled.section`
 
   h1 {
     font-size: 8vw;
-    font-family: 'Bellota';
+    font-family: 'Bellota', 'Helvetica', 'Arial', 'sans-serif';
     margin: 10% 3% 3% 3%;
-
   }
 
   h2 {
@@ -40,10 +39,11 @@ export const StyleHomeFirstSlide = styled.section`
     margin-top: 0;
     font-weight: 500;
   }
+}
 
 
   ${'' /* slide 1 xl screen */}
-  @media only screen and (max-width: 2440px) {
+  @media only screen and (min-width: 1700px) {
     .slide-one-container {
     background-position: 1%;    
     }
@@ -72,11 +72,12 @@ export const StyleHomeFirstSlide = styled.section`
 
     .container {
       margin: 8% 0% 0% 0%;
-      width: 90%;
+      width: 95%;
+
     }
 
     h1 {
-    font-size: 12vh;
+    font-size: 10vh;
     margin: 0;
     }
 
@@ -100,17 +101,17 @@ export const StyleHomeFirstSlide = styled.section`
 
     h1 {
     font-size: 18vw;
-  }
+    }
 
-  h2 {
-    font-size: 8vw;
-    margin: 5% 0% 1% 0%;
-  }
+    h2 {
+      font-size: 8vw;
+      margin: 5% 0% 1% 0%;
+    }
 
-  h3 {
-    font-size: 4.5vw;
-    margin: 5% 0% 1% 0%;
-  }
+    h3 {
+      font-size: 4.5vw;
+      margin: 5% 0% 1% 0%;
+    }
   }
 
 ${'' /* slide one big screen */}

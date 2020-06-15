@@ -7,7 +7,6 @@ export const StyleHomeFirstSlide = styled.section`
     background-image: url(${Matilda});
     background-size: cover;
     height: 100vh;
-    ${'' /* width: 100vw; */}
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,7 +82,7 @@ export const StyleHomeFirstSlide = styled.section`
 
     h2 {
     font-size: 5vh;
-    margin: 2% 0% 1% 0%;
+    margin: 5% 0% 3% 0%;
     }
 
     h3 {
@@ -114,16 +113,6 @@ export const StyleHomeFirstSlide = styled.section`
     }
   }
 
-${'' /* slide one big screen */}
-  @media only screen and (max-width: 760px) {
-  .slide-one-container {
-    background-image: url(${Matilda});
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } 
+
   
 `

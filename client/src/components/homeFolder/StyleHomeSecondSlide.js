@@ -11,6 +11,10 @@ export const StyleHomeSecondSlide = styled.section`
     align-items: center;
     height: 100vh;
    ${'' /* // margin-top: 30vh; */}
+
+
+      
+      
   }
 
   .card {
@@ -75,6 +79,8 @@ ${'' /* slide 2 mobile view */}
       margin-top: 15%;
       flex-direction: column;
       align-items: center;
+
+      
     }
     
     .card {

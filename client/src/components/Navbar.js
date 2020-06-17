@@ -54,7 +54,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link to='/classes' className='links'>
-            Yogaklasser
+            Yogalektioner
           </Link>
         </li>
         <li>

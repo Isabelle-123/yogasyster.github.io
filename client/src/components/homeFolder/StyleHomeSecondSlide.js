@@ -77,10 +77,6 @@ export const StyleHomeSecondSlide = styled.section`
 
 ${'' /* slide 2 mobile view */}
   @media only screen and (max-width: 540px) {
-    .card-container {
-      height: 80vh;   
-    }
-    
     .link > img { {
       height: 140px;
       width: 110px;

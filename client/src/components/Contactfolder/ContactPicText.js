@@ -23,6 +23,7 @@ const StyleContactPicText = styled.div`
     display: flex;
     align-self: center;
     color: #8d6262;
+    margin: px;
   }
 
   h2,
@@ -33,15 +34,13 @@ const StyleContactPicText = styled.div`
     font-size: 1em;
   }
 
-  h3 {
-    margin-top: 2%;
+  ${'' /* h3 {
     font-size: 0.9em;
-    /* color: #84142d; */
     color: #4d4545;
     margin-bottom: 0;
     margin-top: 20px;
     font-weight: 400;
-  }
+  } */}
 
   @media only screen and (max-width: 637px) {
     h1 {
@@ -62,7 +61,7 @@ const ContactText = () => {
           <h1>Boka yogalektion</h1>
           <h2>Mejl: matildaeden@gmail.com</h2>
           <h2>Telefon: 0704-809205</h2>
-          <h3>Eller skicka ett meddelande till mig:</h3>
+          {/* <h3>Skicka meddelande till mig:</h3> */}
         </section>
       </div>
     </StyleContactPicText>

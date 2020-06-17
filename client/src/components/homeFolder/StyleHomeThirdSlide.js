@@ -22,7 +22,6 @@ export const StyleHomeThirdSlide = styled.section`
     .instagram-title {
       color: #8d6262;
       font-size: 24px;
-      font-weight: 500;
       text-align: center;
     }
   }

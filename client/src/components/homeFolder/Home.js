@@ -61,7 +61,7 @@ const Home = () => {
         <section className='insta-container'>
           <div className='instagram-title-container'>
             <h3 className='instagram-title'>
-              Följ mig och min syster på @yogasyster
+              Följ mig på instagram @yogasyster
             </h3>
           </div>
           <article class='powr-social-feed' id='9bc6ecef_1591955690'></article>

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { StyleClasses } from './StyleClasses'
 import { Link } from 'react-router-dom'
 import yogaklassPic from '../assets/images/yogaklass-massage-yogasyster.jpg'
-import yogaklassPicSmall from '../assets/images/yogaklass-massage-yogasyster-matilda.jpg'
+import yogaklassBigScreen from '../assets/images/yogaklass-massage-yogasyster-matilda.jpg'
 import björkPic from '../assets/images/björk.jpg'
 
 const Classes = () => {
@@ -14,7 +14,7 @@ const Classes = () => {
         alt='Yogasyster Matilda håller i yogaklass'
       />
       <img
-        src={yogaklassPicSmall}
+        src={yogaklassBigScreen}
         className='pic-big-screen'
         alt='Yogasyster Matilda håller i yogaklass'
       />

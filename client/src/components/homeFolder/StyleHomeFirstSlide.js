@@ -66,28 +66,28 @@ export const StyleHomeFirstSlide = styled.section`
   ${'' /* slide 1 tablet */}
   @media only screen and (max-width: 1000px) {
     .slide-one-container {
-    background-position: 40%;
+      background-position: 40%;
     }
 
     .container {
       margin: 8% 0% 0% 0%;
       width: 95%;
-
+      text-align: center;
     }
 
     h1 {
-    font-size: 10vh;
-    margin: 0;
+      font-size: 10vh;
+      margin: 0;
     }
 
     h2 {
-    font-size: 5vh;
-    margin: 5% 0% 3% 0%;
+      font-size: 5vh;
+      margin: 5% 0% 3% 0%;
     }
 
     h3 {
-    font-size: 3vh;
-    margin:0;
+      font-size: 3vh;
+      margin:0;
     }
   }
  

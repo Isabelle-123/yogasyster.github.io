@@ -17,7 +17,6 @@ export const StyleHomeSecondSlide = styled.section`
     margin-bottom: 5px;
     width: 290px;
     padding: 1%;
-
   }
 
   .link {

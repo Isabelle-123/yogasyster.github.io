@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import björk from '../assets/images/björk.jpg'
+// import björk from '../assets/images/björk.jpg'
 
 //import PageNotFound from '../assets/images/PageNotFound'
 
@@ -11,12 +11,7 @@ const Style404 = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  margin-top: 20%;
 
   .text-container {
     background: rgba(77, 69, 69, 0.8);
@@ -24,9 +19,6 @@ const Style404 = styled.section`
     flex-direction: column;
     align-items: center;
     color: white;
-    margin-top: 100px;
-    position: absolute;
-    z-index: 1;
     padding: 30px;
   }
 
@@ -41,17 +33,9 @@ const Style404 = styled.section`
     margin-top: 5px;
   }
 
-  img {
-    height: 100%;
-    ${'' /* box-sizing: border-box; */}
-    max-width: 100%;
-    max-height: 100%;
-    width: 100%;
-  }
-
   @media only screen and (max-width: 767px) {
     .text-container {
-      margin-top: 10px;
+      ${'' /* margin-top: 10px; */}
       font-size: 0.4em;
       padding: 5px;
     }
@@ -72,16 +56,16 @@ const My404Component = () => {
     <>
       <Style404>
         {/* <img src={PageNotFound} /> */}
-        <div className='container'>
-          <img src={björk} alt='Björkträd i Göteborg' />
-          <section className='text-container'>
-            <h1>Hoppsan! Den sida du sökte finns inte.</h1>
-            <h2>404</h2>
-            <Link className='link' to='/'>
-              Ta mig till startsidan
-            </Link>
-          </section>
-        </div>
+        {/* <div className='container'> */}
+        {/* <img src={björk} alt='Björkträd i Göteborg' /> */}
+        <section className='text-container'>
+          <h1>Hoppsan! Den sida du sökte finns inte.</h1>
+          <h2>404</h2>
+          <Link className='link' to='/'>
+            Ta mig till startsidan
+          </Link>
+        </section>
+        {/* </div> */}
       </Style404>
     </>
   )

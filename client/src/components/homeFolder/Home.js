@@ -35,10 +35,10 @@ const Home = () => {
           <section className='card'>
             <Link to='/about' className='link'>
               <img
-                src={omYogasysterSmall}
-                alt='Yogasyster Matilda mediterar i skogen'
+                src={contactPicSmall}
+                alt='I Lysekil där en båt är angjord vid en brygga, bredvid vilar Yogasyster Matilda på klipporna'
               />
-              Om mig
+              Boka yogalektion
             </Link>
           </section>
           <section className='card'>
@@ -47,26 +47,26 @@ const Home = () => {
                 src={yogklassLitenPic}
                 alt='Yogasyster Matilda håller i yogaklass'
               />
-              Yogaklasser
+              Mina yogalektioner
             </Link>
           </section>
           <section className='card'>
             <Link to='/contact' className='link'>
               <img
-                src={contactPicSmall}
-                alt='I Lysekil där en båt är angjord vid en brygga, bredvid vilar Yogasyster Matilda på klipporna'
+                src={omYogasysterSmall}
+                alt='Yogasyster Matilda mediterar i skogen'
               />
-              Kontakt
+              Om mig
             </Link>
           </section>
         </div>
       </StyleHomeSecondSlide>
 
-      <StyleHomeThirdSlide>
-        <section className='insta-container'>
-          <div className='powr-social-feed' id='9bc6ecef_1591955690'></div>
-        </section>
-      </StyleHomeThirdSlide>
+      {/* <StyleHomeThirdSlide> */}
+      <section className='insta-container'>
+        <div class='powr-social-feed' id='9bc6ecef_1591955690'></div>
+      </section>
+      {/* </StyleHomeThirdSlide> */}
     </>
   )
 }

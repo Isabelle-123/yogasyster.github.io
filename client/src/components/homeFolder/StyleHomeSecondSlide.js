@@ -7,7 +7,7 @@ export const StyleHomeSecondSlide = styled.section`
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    height: 100vh;   
+    height: 100vh;  
   }
 
   .card {
@@ -45,7 +45,6 @@ export const StyleHomeSecondSlide = styled.section`
 
     .link {
       font-size: 1.5em;
-      color:red;
     }
 
     .link > img { 
@@ -78,7 +77,6 @@ export const StyleHomeSecondSlide = styled.section`
 
 
 ${'' /* slide 2 mobile view */}
-
   @media only screen and (max-width: 540px) {
     .card-container {
       height: 80vh;   

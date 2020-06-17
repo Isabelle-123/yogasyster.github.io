@@ -1,6 +1,6 @@
-import React from 'react';
-import ContactInput from './ContactInput.js';
-import styled from 'styled-components';
+import React from 'react'
+import ContactInput from './ContactInput.js'
+import styled from 'styled-components'
 
 const StyleContactForm = styled.div`
   #contact-form {
@@ -38,18 +38,19 @@ const StyleContactForm = styled.div`
   }
 
   button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 80px;
     background-color: white;
     color: #8d6262;
     line-height: 130%;
     font-size: 0.9em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: center;
-    margin: 3%;
+    margin: 2%;
     border-radius: 5px;
     cursor: pointer;
+    border-color: #8d6262;
+    padding: 5px;
   }
 
   .label {
@@ -65,7 +66,7 @@ const StyleContactForm = styled.div`
     ${'' /* outline-color: #4d4545; */}
     outline-color: #f3d4d4;
   }
-`;
+`
 
 const ContactForm = ({
   onSubmit,
@@ -112,6 +113,6 @@ const ContactForm = ({
       </div>
     </form>
   </StyleContactForm>
-);
+)
 
-export default ContactForm;
+export default ContactForm

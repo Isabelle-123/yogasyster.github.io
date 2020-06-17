@@ -9,15 +9,9 @@ export const StyleClasses = styled.div`
     height: auto;
     width: 100%;
     display: flex;
-
-    ${'' /* height: auto;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center; */}
   }
 
-  h1 {
+  ${'' /* h1 {
     display: flex;
     justify-content: center;
     color: #84142d;
@@ -25,7 +19,8 @@ export const StyleClasses = styled.div`
     font-size: 2em;
     margin-top: 20px;
     margin-bottom: 0;
-  }
+  } */}
+
   .card-container {
     display: flex;
     flex-direction: row;
@@ -49,43 +44,29 @@ export const StyleClasses = styled.div`
     border-radius: 5px;
   }
 
-  h3 {
+  .link-title {
+    text-decoration: none;
     color: #8d6262;
-    font-size: 1.3em;
-    margin-top: 10px;
   }
 
-  p {
+  h1 {
+    color: #8d6262;
+    font-size: 2em;
+    font-weight: 500;
+    margin-top: 10px;
+    text-decoration: none;
+  }
+
+  p,
+  .link-text {
     display: flex;
     color: #393232;
     text-align: justify;
     line-height: 130%;
     font-size: 0.9em;
     margin-top: 0;
-  }
-
-  button {
-    width: 80px;
-    background-color: white;
-    color: #8d6262;
-    line-height: 130%;
-    font-size: 0.9em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: center;
-    margin: 10px;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  button:hover {
-    background-color: #8d6262;
-    color: white;
-  }
-
-  button:focus {
-    ${'' /* outline-color: #4d4545; */}
-    outline-color: #f3d4d4;
+    padding: 5%;
+    text-decoration: none;
   }
 
   ${'' /* big screen */}
@@ -104,8 +85,12 @@ export const StyleClasses = styled.div`
   ${'' /* ipad */}
   @media only screen and (max-width: 970px) {
     .card {
-      width: 200px;
+      width: 30vw;
       height: auto;
+    }
+
+    h1 {
+      font-size: 2.5vh;
     }
   }
 
@@ -114,6 +99,14 @@ export const StyleClasses = styled.div`
     .card-container {
       flex-direction: column;
       align-items: center;
+    }
+    .card {
+      width: 65vw;
+      height: auto;
+    }
+
+    h1 {
+      font-size: 24px;
     }
   }
 `

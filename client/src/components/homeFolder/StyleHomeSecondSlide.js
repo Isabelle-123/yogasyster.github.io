@@ -43,7 +43,7 @@ export const StyleHomeSecondSlide = styled.section`
     }
 
     .link {
-      font-size: 1.5em;
+      font-size:24px;
     }
 
     .link > img { 

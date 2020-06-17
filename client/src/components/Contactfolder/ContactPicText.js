@@ -18,23 +18,19 @@ const StyleContactPicText = styled.div`
   }
 
   h1 {
-    font-family: Zeyada;
     font-size: 2em;
+    font-weight: 500;
     display: flex;
     align-self: center;
-    color: #84142d;
-    margin-top: 3%;
-    margin-bottom: 2%;
+    color: #8d6262;
   }
 
   h2,
   h3 {
     color: #8d6262;
     display: flex;
-    /* opacity: 80%; */
     margin: 5px;
     font-size: 1em;
-    /* line-height: 150%; */
   }
 
   h3 {
@@ -45,6 +41,12 @@ const StyleContactPicText = styled.div`
     margin-bottom: 0;
     margin-top: 20px;
     font-weight: 400;
+  }
+
+  @media only screen and (max-width: 637px) {
+    h1 {
+      font-size: 24px;
+    }
   }
 `
 

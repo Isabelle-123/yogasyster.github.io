@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { StyleHomeFirstSlide } from './StyleHomeFirstSlide'
 import { StyleHomeSecondSlide } from './StyleHomeSecondSlide'
 import { StyleHomeThirdSlide } from './StyleHomeThirdSlide'
@@ -7,11 +7,6 @@ import { Link } from 'react-router-dom'
 import omYogasysterSmall from '../assets/images/om-yogasyster-matilda.jpg'
 import yogklassLitenPic from '../assets/images/yogaklass-massage-hem.jpg'
 import contactPicSmall from '../assets/images/kontakta-yogasyster-matilda-hem.jpg'
-
-// const Matilda = require('./pics/hemsida-yogasyster-matilda.jpg')
-// const omYogasysterSmall = require('./pics/om-yogasyster-matilda.jpg')
-// const yogklassLitenPic = require('./pics/yogaklass-massage-hem.jpg')
-// const contactPicSmall = require('./pics/kontakta-yogasyster-matilda-hem.jpg')
 
 const Home = () => {
   // useEffect(() => {
@@ -33,7 +28,7 @@ const Home = () => {
       <StyleHomeSecondSlide>
         <div className='card-container'>
           <section className='card'>
-            <Link to='/about' className='link'>
+            <Link to='/contact' className='link'>
               <img
                 src={contactPicSmall}
                 alt='I Lysekil där en båt är angjord vid en brygga, bredvid vilar Yogasyster Matilda på klipporna'
@@ -51,7 +46,7 @@ const Home = () => {
             </Link>
           </section>
           <section className='card'>
-            <Link to='/contact' className='link'>
+            <Link to='/about' className='link'>
               <img
                 src={omYogasysterSmall}
                 alt='Yogasyster Matilda mediterar i skogen'
@@ -62,11 +57,16 @@ const Home = () => {
         </div>
       </StyleHomeSecondSlide>
 
-      {/* <StyleHomeThirdSlide> */}
-      <section className='insta-container'>
-        <div class='powr-social-feed' id='9bc6ecef_1591955690'></div>
-      </section>
-      {/* </StyleHomeThirdSlide> */}
+      <StyleHomeThirdSlide>
+        <section className='insta-container'>
+          <div className='instagram-title-container'>
+            <h3 className='instagram-title'>
+              Följ mig och min syster på @yogasyster
+            </h3>
+          </div>
+          <article class='powr-social-feed' id='9bc6ecef_1591955690'></article>
+        </section>
+      </StyleHomeThirdSlide>
     </>
   )
 }

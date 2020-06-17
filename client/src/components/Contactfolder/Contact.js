@@ -44,7 +44,7 @@ class Contact extends Component {
       .then((response) => {
         console.log(response.data)
         if (response.data.status === 'success') {
-          alert('Meddelande skickades!')
+          // alert('Meddelande skickades!')
           this.resetForm()
         } else if (response.data.status === 'fail') {
           alert('Någit gick fel! Meddelande skickades inte.')

@@ -31,9 +31,6 @@ export const StyleAbout = styled.div`
     font-weight: 500;
     margin-top: 20px;
     margin-bottom: 0%;
-
-    ${'' /* color: #393232;
-  opacity: 70%; */}
   }
 
   p {

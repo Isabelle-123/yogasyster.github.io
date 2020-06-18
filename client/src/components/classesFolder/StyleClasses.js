@@ -11,16 +11,6 @@ export const StyleClasses = styled.div`
     display: flex;
   }
 
-  ${'' /* h1 {
-    display: flex;
-    justify-content: center;
-    color: #84142d;
-    font-family: Zeyada;
-    font-size: 2em;
-    margin-top: 20px;
-    margin-bottom: 0;
-  } */}
-
   .card-container {
     display: flex;
     flex-direction: row;

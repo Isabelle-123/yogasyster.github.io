@@ -2,10 +2,6 @@ import React, { useEffect } from 'react'
 import { StyleAbout } from './StyleAbout'
 import omYogasyster from '../assets/images/om-yogasyster-matilda-edén.jpg'
 import omYogasysterBigScreen from '../assets/images/om-yogasyster-matilda.jpg'
-//import { StyleAbout } from "react-router-dom";
-
-//const omYogasyster = require('./pics/om-yogasyster-matilda-edén.jpg')
-//const omYogasysterSmall = require('./pics/om-yogasyster-matilda.jpg')
 
 const About = () => {
   useEffect(() => {

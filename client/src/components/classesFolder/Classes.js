@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { StyleClasses } from './StyleClasses'
 import { Link } from 'react-router-dom'
 import yogaklassPic from '../assets/images/yogaklass-massage-yogasyster.jpg'

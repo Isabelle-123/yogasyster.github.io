@@ -2,8 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import contactPic from '../assets/images/kontakta-yogasyster-matilda.jpg'
 
-//const contactPic = require('../pics/kontakta-yogasyster-matilda.jpg');
-
 const StyleContactPicText = styled.div`
   img {
     height: auto;
@@ -33,14 +31,6 @@ const StyleContactPicText = styled.div`
     margin: 5px;
     font-size: 1em;
   }
-
-  ${'' /* h3 {
-    font-size: 0.9em;
-    color: #4d4545;
-    margin-bottom: 0;
-    margin-top: 20px;
-    font-weight: 400;
-  } */}
 
   @media only screen and (max-width: 637px) {
     h1 {

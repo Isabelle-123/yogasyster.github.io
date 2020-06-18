@@ -1,11 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-// import björk from '../assets/images/björk.jpg'
-
-//import PageNotFound from '../assets/images/PageNotFound'
-
-// const björk = require('./pics/björk.jpg')
 
 const Style404 = styled.section`
   display: flex;
@@ -35,7 +30,6 @@ const Style404 = styled.section`
 
   @media only screen and (max-width: 767px) {
     .text-container {
-      ${'' /* margin-top: 10px; */}
       font-size: 0.4em;
       padding: 5px;
     }
@@ -55,9 +49,6 @@ const My404Component = () => {
   return (
     <>
       <Style404>
-        {/* <img src={PageNotFound} /> */}
-        {/* <div className='container'> */}
-        {/* <img src={björk} alt='Björkträd i Göteborg' /> */}
         <section className='text-container'>
           <h1>Hoppsan! Den sida du sökte finns inte.</h1>
           <h2>404</h2>
@@ -65,7 +56,6 @@ const My404Component = () => {
             Ta mig till startsidan
           </Link>
         </section>
-        {/* </div> */}
       </Style404>
     </>
   )

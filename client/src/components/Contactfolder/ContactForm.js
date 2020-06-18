@@ -63,7 +63,6 @@ const StyleContactForm = styled.div`
   }
 
   button:focus {
-    ${'' /* outline-color: #4d4545; */}
     outline-color: #f3d4d4;
   }
 `

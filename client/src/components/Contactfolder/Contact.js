@@ -3,8 +3,6 @@ import axios from 'axios'
 import styled from 'styled-components'
 import ContactForm from './ContactForm'
 import ContactText from './ContactPicText'
-import Popup from 'reactjs-popup'
-//import { response } from "express";
 
 const StyleContact = styled.div`
   display: flex;
@@ -36,7 +34,6 @@ class Contact extends Component {
 
   handleSubmit(e) {
     e.preventDefault()
-    //console.log(this.state);
     axios
       .post('http://localhost:3001/contact/send', {
         data: this.state,
@@ -47,7 +44,7 @@ class Contact extends Component {
           // alert('Meddelande skickades!')
           this.resetForm()
         } else if (response.data.status === 'fail') {
-          alert('Någit gick fel! Meddelande skickades inte.')
+          alert('Något gick fel! Meddelande skickades inte.')
         }
       })
   }

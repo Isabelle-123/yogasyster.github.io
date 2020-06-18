@@ -9,10 +9,6 @@ import yogklassLitenPic from '../assets/images/yogaklass-massage-hem.jpg'
 import contactPicSmall from '../assets/images/kontakta-yogasyster-matilda-hem.jpg'
 
 const Home = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0)
-  // }, [])
-
   return (
     <>
       <StyleHomeFirstSlide>

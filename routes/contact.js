@@ -8,7 +8,7 @@ require('dotenv').config()
 //var cors = require("cors");
 // const creds = require("../config");
 
-console.log(require('dotenv').config())
+//console.log(require('dotenv').config())
 
 if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config()
@@ -47,15 +47,15 @@ smtpTrans.verify((error, success) => {
 })
 
 router.post('/send', (req, res, next) => {
-  //console.log("****INSIDE SEND ROUTER LOGGIN BODY", req.body);
+  console.log('***INSIDE SEND ROUTER LOGGIN BODY', req.body)
   var name = req.body.data.name
   var email = req.body.data.email
   var message = req.body.data.message
   var content = `name: ${name} \n email: ${email} \n message: ${message} `
-  console.log('*****LOGGING CONTENT', content)
+  console.log('***LOGGING CONTENT', content)
 
   var mailOptions = {
-    // from: req.body.data.email,
+    from: req.body.data.email,
     replyTo: req.body.data.email,
     to: 'ingafakesson@gmail.com',
     subject: 'Mejl från Yogasyster: ' + req.body.data.name,

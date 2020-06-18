@@ -1,21 +1,24 @@
+//chunk 1
+const express = require('express')
+const app = express()
+const path = require('path')
+const PORT = 3001
+
 var createError = require('http-errors')
-var express = require('express')
-var path = require('path')
 var cookieParser = require('cookie-parser')
 var logger = require('morgan')
-
-// var indexRouter = require("./routes/hello");
 var usersRouter = require('./routes/contact')
-
-var app = express()
 var cors = require('cors')
 
 app.use(cors())
-
 app.use(logger('dev'))
-app.use(express.json())
-app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
+
+// chunk 2
+//Data parsing
+app.use(express.urlencoded({ extended: false }))
+app.use(express.json())
+
 app.use(express.static(path.join(__dirname, 'client/build')))
 
 app.use((req, res, next) => {
@@ -42,5 +45,6 @@ app.use(function (err, req, res, next) {
   res.send('error')
 })
 
-app.listen(3001)
+app.listen(PORT, () => console.log('Server is starting on PORT', 3001))
+
 module.exports = app

@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const path = require('path')
-const PORT = 3001
+const PORT = process.env.PORT || 3001
 const usersRouter = require('./routes/contact')
 const createError = require('http-errors')
 
@@ -35,6 +35,7 @@ app.use(function (err, req, res, next) {
   res.send('error')
 })
 
-app.listen(PORT, () => console.log('Server is starting on PORT', 3001))
+app.listen(PORT)
+console.log(`App listening on ${PORT}`)
 
 module.exports = app

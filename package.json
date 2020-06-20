@@ -1,14 +1,18 @@
 {
   "name": "yogasyster",
   "version": "0.0.0",
-  "main": "app.js",
+  "private": true,
+  "engine": {
+    "node": "12.13.1",
+    "npm": "6.14.5"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "client": "npm run start --prefix client",
-    "server": "nodemon app.js",
-    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
-    "start": "node index.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "dev": "run-p dev:**",
+    "dev:server": "nodemon app.js",
+    "dev:app": "cd client && npm start",
+    "build:app": "cd client && npm build",
+    "start": "node app.js",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "dependencies": {
     "body-parser": "^1.19.0",

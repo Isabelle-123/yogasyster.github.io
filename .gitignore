@@ -106,6 +106,7 @@ dist
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+.vscode/
 
 # yarn v2
 
@@ -113,3 +114,9 @@ dist
 .yarn/unplugged
 .yarn/build-state.yml
 .pnp.*
+
+#https://coursework.vschool.io/deploying-mern-with-heroku/?fbclid=IwAR142_rVU3FmYpEYEH8iE-1SR2MneZ8dL54eIDIBNGrsbaEHMriXc-CCJc4
+.DS_Store
+*.orig
+.idea/
+.build

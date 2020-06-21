@@ -30,7 +30,7 @@ export const StyleClasses = styled.div`
 
   .card > img {
     width: 100%;
-    height: auto;
+    height: 40%;
     border-radius: 5px;
   }
 
@@ -80,12 +80,12 @@ export const StyleClasses = styled.div`
     }
 
     h1 {
-      font-size: 2.5vh;
+      font-size: 2.2vh;
     }
   }
 
   ${'' /* mobile */}
-  @media only screen and (max-width: 637px) {
+  @media only screen and (max-width: 767px) {
     .card-container {
       flex-direction: column;
       align-items: center;
@@ -94,6 +94,11 @@ export const StyleClasses = styled.div`
       width: 65vw;
       height: auto;
     }
+
+    ${'' /* .img {
+      width: 65vw;
+      height: 10vh;
+    } */}
 
     h1 {
       font-size: 24px;

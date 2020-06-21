@@ -15,8 +15,9 @@ const Home = () => {
         <div className='slide-one-container'>
           <section className='container'>
             <h1>Yogasyster</h1>
-            <h2>Hathayoga</h2>
-            <h3>Legitimerad arbetsterapeut och massör</h3>
+            <h2>legitimerad arbetsterapeut,</h2>
+            <h2>yogalärare och massör</h2>
+            {/* <h3>legitimerad arbetsterapeut, yogalärare och massör</h3> */}
           </section>
         </div>
       </StyleHomeFirstSlide>

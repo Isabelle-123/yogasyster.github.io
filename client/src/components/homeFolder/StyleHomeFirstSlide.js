@@ -24,13 +24,15 @@ export const StyleHomeFirstSlide = styled.section`
   h1 {
     font-size: 8vw;
     font-family: 'Bellota', 'Helvetica', 'Arial', 'sans-serif';
-    margin: 10% 3% 3% 3%;
+    margin: 10% 3% 5% 3%;
   }
 
   h2 {
-    font-size: 3vw;
-    margin: 3%;
+    ${'' /* font-size: 3vw; */}
+    font-size: 2vw;
+    margin: 0% 0% 3% 0%;
     font-weight: 500;
+    text-align: center;
   }
 
   h3 {
@@ -49,12 +51,12 @@ export const StyleHomeFirstSlide = styled.section`
     
     h1 {
     font-size: 15vh;
-    margin: 0;
+    margin: 0% 0% 5% 0%;
     }
 
     h2 {
-    font-size: 5vh;
-    margin: 3% 0% 3% 0%;
+    font-size: 4vh;
+    margin: 0% 0% 3% 0%;
     }
 
     h3 {
@@ -77,12 +79,15 @@ export const StyleHomeFirstSlide = styled.section`
 
     h1 {
       font-size: 10vh;
-      margin: 0;
+      margin: 0% 0% 3% 0%;
+      
     }
 
     h2 {
-      font-size: 5vh;
-      margin: 5% 0% 3% 0%;
+      ${'' /* font-size: 5vh; */}
+      font-size: 3vh;
+      margin: 0% 0% 1% 0%;
+  
     }
 
     h3 {
@@ -100,11 +105,13 @@ export const StyleHomeFirstSlide = styled.section`
 
     h1 {
     font-size: 18vw;
+    margin: 0% 0% 5% 0%;
     }
 
     h2 {
-      font-size: 8vw;
-      margin: 5% 0% 1% 0%;
+      ${'' /* font-size: 8vw; */}
+      font-size: 7vw;
+      margin: 0% 0% 3% 0%;
     }
 
     h3 {

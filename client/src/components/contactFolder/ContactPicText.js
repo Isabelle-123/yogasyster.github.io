@@ -21,7 +21,6 @@ const StyleContactPicText = styled.div`
     display: flex;
     align-self: center;
     color: #8d6262;
-    margin: px;
   }
 
   h2,

@@ -86,19 +86,15 @@ export const StyleClasses = styled.div`
 
   ${'' /* mobile */}
   @media only screen and (max-width: 767px) {
+    height: 100%;
+
     .card-container {
       flex-direction: column;
       align-items: center;
     }
     .card {
       width: 65vw;
-      height: auto;
     }
-
-    ${'' /* .img {
-      width: 65vw;
-      height: 10vh;
-    } */}
 
     h1 {
       font-size: 24px;

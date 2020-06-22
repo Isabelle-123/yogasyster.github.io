@@ -1,9 +1,6 @@
 import styled from 'styled-components'
 
 export const StyleHomeThirdSlide = styled.section`
-  .insta-container {
-    height: 100vh;
-  }
   .instagram-title-container {
     display: flex;
     flex-direction: column;

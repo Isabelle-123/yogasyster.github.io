@@ -63,7 +63,7 @@ export const StyleAbout = styled.div`
     .pic-big-screen {
       display: inherit;
       height: 700px;
-      margin: 5% 0% 5% 5%;
+      margin: 5% 0% 0% 5%;
       border-radius: 5px;
     }
 
@@ -73,7 +73,7 @@ export const StyleAbout = styled.div`
 
     .text-container {
       width: 600px;
-      margin: 6% 5% 5% 5%;
+      margin: 6% 5% 0% 5%;
       padding: 0;
     }
 

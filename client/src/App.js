@@ -1,5 +1,6 @@
 import React from 'react'
-import Navbar from './components/Navbar'
+import Navbar from './components/navbarFooterFolder/Navbar'
+import Footer from './components/navbarFooterFolder/Footer'
 import Home from './components/homeFolder/Home'
 import About from './components/aboutFolder/About'
 import Classes from './components/classesFolder/Classes'
@@ -30,6 +31,7 @@ const App = () => {
           </Route>
           <Route component={My404RedirectToNotFound} />
         </Switch>
+        <Footer />
       </>
     )
   }

@@ -8,6 +8,7 @@ const StyleContact = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
 `
 
 class Contact extends Component {

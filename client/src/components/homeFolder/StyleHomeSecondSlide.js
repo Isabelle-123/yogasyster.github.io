@@ -114,6 +114,7 @@ export const StyleHomeSecondSlide = styled.section`
       margin-bottom: 5px;
     }
   }
+
   @media only screen and (orientation: landscape) and (max-width: 450px) {
     .card {
       width: auto;

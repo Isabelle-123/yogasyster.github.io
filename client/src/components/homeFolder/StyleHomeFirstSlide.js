@@ -91,8 +91,8 @@ export const StyleHomeFirstSlide = styled.section`
     }
 
     h1 {
-    font-size: 18vw;
-    margin: 0% 0% 5% 0%;
+      font-size: 18vw;
+      margin: 0% 0% 5% 0%;
     }
 
     h2 {
@@ -100,4 +100,39 @@ export const StyleHomeFirstSlide = styled.section`
       margin: 0% 0% 3% 0%;
     }
   }
+
+ @media only screen and (orientation: landscape) and (max-width: 450px) {
+    .container {
+      margin-top: 10%;
+      margin-left: 30%;
+    }
+
+    h1 {
+      font-size: 10vw;
+      margin-bottom: 1%;
+    }
+
+    h2 {
+      font-size: 3vw;
+      margin: 0% 0% 1% 0%;
+    }
+  }
+
+  @media only screen and (max-device-width: 2024px) and (orientation: landscape) {
+
+    .container {
+      margin-top: 5%;
+      margin-left: 45%;
+    }
+
+    h1 {
+      font-size: 8vw;
+      margin-bottom: 1%;
+    }
+
+    h2 {
+      font-size: 3vw;
+      margin: 0% 0% 1% 0%;
+    }
+  } 
 `

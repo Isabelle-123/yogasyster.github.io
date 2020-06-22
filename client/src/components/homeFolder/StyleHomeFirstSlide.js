@@ -118,20 +118,19 @@ export const StyleHomeFirstSlide = styled.section`
     }
   }
 
-  @media only screen and (max-device-width: 2024px) and (orientation: landscape) {
-
+ @media only screen and (max-device-width: 2024px) and (orientation: landscape) {
     .container {
-      margin-top: 5%;
-      margin-left: 45%;
+      margin-top: 4%;
+      margin-left: 42%;
     }
 
     h1 {
-      font-size: 8vw;
+      font-size: 10vw;
       margin-bottom: 1%;
     }
 
     h2 {
-      font-size: 3vw;
+      font-size: 2.5vw;
       margin: 0% 0% 1% 0%;
     }
   } 

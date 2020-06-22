@@ -72,7 +72,6 @@ export const StyleHomeFirstSlide = styled.section`
 
     h1 {
       font-size: 10vh;
-      margin: 0% 0% 3% 0%;
       
     }
 

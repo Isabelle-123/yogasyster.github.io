@@ -48,13 +48,13 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to='/about' className='links'>
-            Om mig
+          <Link to='/classes' className='links'>
+            Yogalektioner
           </Link>
         </li>
         <li>
-          <Link to='/classes' className='links'>
-            Yogalektioner
+          <Link to='/about' className='links'>
+            Om mig
           </Link>
         </li>
         <li>

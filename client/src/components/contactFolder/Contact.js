@@ -10,7 +10,7 @@ const StyleContact = styled.div`
   align-items: center;
   height: 100vh;
 
-  @media only screen and (orientation: landscape) {
+  @media only screen and (max-device-width: 768px) and (orientation: landscape) {
     height: 100%;
   }
 `

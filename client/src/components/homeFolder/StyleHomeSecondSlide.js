@@ -83,7 +83,7 @@ export const StyleHomeSecondSlide = styled.section`
     }
   }
 
-  @media only screen and (max-device-width: 768px) and (orientation: landscape) {
+  @media only screen and (max-width: 768px) and (orientation: landscape) {
     .card-container {
       display: flex;
       flex-direction: row;

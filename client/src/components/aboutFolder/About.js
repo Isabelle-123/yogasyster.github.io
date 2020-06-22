@@ -23,8 +23,9 @@ const About = () => {
         <section className='text-container'>
           <h1>Om mig</h1>
           <p>
-            En sökande person, med höga krav på sig själv, som alltid varit
-            upptagen av 1000 tankar samtidigt och oroat sig för framtiden.
+            Det var yogan som hittade mig! En sökande person, med höga krav på
+            sig själv, som alltid varit upptagen av 1000 tankar samtidigt och
+            oroat sig för framtiden.
           </p>
           <p>
             Innan yogan kom in i bilden prövade jag på strategin “resa till

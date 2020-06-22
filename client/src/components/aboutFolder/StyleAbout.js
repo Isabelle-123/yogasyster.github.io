@@ -73,7 +73,7 @@ export const StyleAbout = styled.div`
 
     .text-container {
       width: 600px;
-      margin: 5% 5% 5% 5%;
+      margin: 6% 5% 5% 5%;
       padding: 0;
     }
 

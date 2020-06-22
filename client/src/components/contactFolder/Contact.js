@@ -9,6 +9,10 @@ const StyleContact = styled.div`
   flex-direction: column;
   align-items: center;
   height: 100vh;
+
+  @media only screen and (orientation: landscape) {
+    height: 100%;
+  }
 `
 
 class Contact extends Component {

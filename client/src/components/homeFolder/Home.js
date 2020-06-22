@@ -2,7 +2,6 @@ import React from 'react'
 import { StyleHomeFirstSlide } from './StyleHomeFirstSlide'
 import { StyleHomeSecondSlide } from './StyleHomeSecondSlide'
 import { StyleHomeThirdSlide } from './StyleHomeThirdSlide'
-//import { PageSlides, SlideParallaxType } from 'react-page-slides'
 import { Link } from 'react-router-dom'
 import omYogasysterSmall from '../assets/images/om-yogasyster-matilda.jpg'
 import yogklassLitenPic from '../assets/images/yogaklass-massage-hem.jpg'
@@ -15,9 +14,8 @@ const Home = () => {
         <div className='slide-one-container'>
           <section className='container'>
             <h1>Yogasyster</h1>
-            <h2>legitimerad arbetsterapeut,</h2>
+            <h2>legitimerad arbetsterapeut</h2>
             <h2>yogalärare och massör</h2>
-            {/* <h3>legitimerad arbetsterapeut, yogalärare och massör</h3> */}
           </section>
         </div>
       </StyleHomeFirstSlide>

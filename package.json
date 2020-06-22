@@ -22,10 +22,8 @@
     "http-errors": "~1.6.3",
     "nodemailer": "^6.4.6",
     "nodemon": "^2.0.3",
-    "pug": "^2.0.4",
     "react-router-dom": "^5.1.2",
-    "uglify-js": "^3.9.1",
-    "webfontloader": "^1.6.28"
+    "uglify-js": "^3.9.1"
   },
   "resolutions": {
     "minimist": "^1.2.5"

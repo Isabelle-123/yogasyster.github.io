@@ -59,7 +59,10 @@ const Home = () => {
               Följ mig på instagram @yogasyster
             </h3>
           </div>
-          <article class='powr-social-feed' id='9bc6ecef_1591955690'></article>
+          <article
+            className='powr-social-feed'
+            id='9bc6ecef_1591955690'
+          ></article>
         </section>
       </StyleHomeThirdSlide>
     </>

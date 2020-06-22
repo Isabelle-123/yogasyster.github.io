@@ -103,13 +103,12 @@ export const StyleHomeFirstSlide = styled.section`
 
  @media only screen and (orientation: landscape) and (max-width: 450px) {
     .container {
-      margin-top: 10%;
-      margin-left: 30%;
+      margin: 15% 10% 0% 0%;
     }
 
     h1 {
-      font-size: 10vw;
-      margin-bottom: 1%;
+      margin: 8% 0% 5% 0%;
+      font-size: 12vw;
     }
 
     h2 {

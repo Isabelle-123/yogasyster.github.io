@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import Navbar from './components/navbarFooterFolder/Navbar'
 import Footer from './components/navbarFooterFolder/Footer'
-import Home from './components/homeFolder/Home'
-import About from './components/aboutFolder/About'
-import Classes from './components/classesFolder/Classes'
-import Contact from './components/contactFolder/Contact'
-import My404RedirectToNotFound from './components/my404Folder/My404RedirectToNotFound'
-import My404Component from './components/my404Folder/My404Component'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
+
+const Home = lazy(() => import('./components/homeFolder/Home'))
+const About = lazy(() => import('./components/aboutFolder/About'))
+const Classes = lazy(() => import('./components/classesFolder/Classes'))
+const Contact = lazy(() => import('./components/contactFolder/Contact'))
+
+const My404RedirectToNotFound = lazy(() =>
+  import('./components/my404Folder/My404RedirectToNotFound')
+)
+const My404Component = lazy(() =>
+  import('./components/my404Folder/My404Component')
+)
 
 const App = () => {
   const DefaultRoutes = () => {
@@ -15,18 +21,10 @@ const App = () => {
       <>
         <Navbar />
         <Switch>
-          <Route exact path='/'>
-            <Home />
-          </Route>
-          <Route path='/about'>
-            <About />
-          </Route>
-          <Route path='/classes'>
-            <Classes />
-          </Route>
-          <Route path='/contact'>
-            <Contact />
-          </Route>
+          <Route exact path='/' component={Home} />
+          <Route path='/about' component={About} />
+          <Route path='/classes' component={Classes} />
+          <Route path='/contact' component={Contact} />
           <Route component={My404RedirectToNotFound} />
         </Switch>
         <Footer />
@@ -36,10 +34,12 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <Switch>
-        <Route component={My404Component} path='/notfound' />
-        <Route component={DefaultRoutes} />
-      </Switch>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Switch>
+          <Route component={My404Component} path='/notfound' />
+          <Route component={DefaultRoutes} />
+        </Switch>
+      </Suspense>
     </BrowserRouter>
   )
 }

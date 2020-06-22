@@ -8,13 +8,11 @@ import Contact from './components/contactFolder/Contact'
 import My404RedirectToNotFound from './components/my404Folder/My404RedirectToNotFound'
 import My404Component from './components/my404Folder/My404Component'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import { Normalize } from 'styled-normalize'
 
 const App = () => {
   const DefaultRoutes = () => {
     return (
       <>
-        <Normalize />
         <Navbar />
         <Switch>
           <Route exact path='/'>
@@ -38,7 +36,6 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <Normalize />
       <Switch>
         <Route component={My404Component} path='/notfound' />
         <Route component={DefaultRoutes} />

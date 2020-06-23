@@ -65,14 +65,14 @@ export const StyleHomeFirstSlide = styled.section`
     }
 
     .container {
-      margin: 8% 0% 0% 0%;
+      margin: 3% 0% 0% 0%;
       width: 95%;
       text-align: center;
     }
 
     h1 {
       font-size: 10vh;
-      
+      margin-top: 1%;
     }
 
     h2 {

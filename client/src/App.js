@@ -34,7 +34,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div style={{ color: '#8d6262' }}></div>}>
         <Switch>
           <Route component={My404Component} path='/notfound' />
           <Route component={DefaultRoutes} />

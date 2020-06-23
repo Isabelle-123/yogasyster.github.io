@@ -15,9 +15,9 @@ Since the site is for a startup I put some work in to get a high SEO. I put some
 
 ## 🗄️ Tech stack
 
-The site has frontend and a backend. For the backend I have used Nodemailer to send messages to a mail.
+The site has frontend (React) and a backend (Node.js). For the backend I also use Nodemailer to send messages to a mail.
 
-- React (Functional and class components, Hooks, Routes)
+- React (Functional and class components, Hooks, Routes, Code Splitting)
 - Styled Components
 - Flexbox
 - Express

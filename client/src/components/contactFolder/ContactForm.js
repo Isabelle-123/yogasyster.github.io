@@ -10,6 +10,7 @@ const StyleContactForm = styled.div`
     flex-direction: column;
     margin-top: 5%;
     margin-bottom: 10%;
+    font-family: Arial, sans-serif;
   }
 
   .form-group {
@@ -35,6 +36,7 @@ const StyleContactForm = styled.div`
     border-radius: 2px;
     border: none;
     width: 200%;
+    font-family: Helvetica, Arial, sans-serif;
   }
 
   button {

@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from 'react'
 import Navbar from './components/navbarFooterFolder/Navbar'
 import Footer from './components/navbarFooterFolder/Footer'
+import GlobalStyle from './globalStyle'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 const Home = lazy(() => import('./components/homeFolder/Home'))
@@ -34,6 +35,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
+      <GlobalStyle />
       <Suspense fallback={<div style={{ color: '#8d6262' }}></div>}>
         <Switch>
           <Route component={My404Component} path='/notfound' />

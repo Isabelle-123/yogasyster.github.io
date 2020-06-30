@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Matilda from '../assets/images/hemsida-yogasyster-matilda.jpg'
+// import FontBellota from './Font-Bellota-Regular.ttf'
 
 export const StyleHomeFirstSlide = styled.section`
 

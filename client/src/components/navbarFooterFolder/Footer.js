@@ -24,7 +24,7 @@ const Footer = () => {
   return (
     <StyleFooter>
       <footer>
-        <div>Mejl: matildaeden@gmail.com</div>
+        <div>Mejl: matilda.yogasyster@gmail.com</div>
         <div>Telefon: 0704-809205</div>
       </footer>
     </StyleFooter>

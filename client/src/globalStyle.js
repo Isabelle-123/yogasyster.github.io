@@ -20,8 +20,8 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Bellota';
     font-weight: 400;  
     font-style: normal;  
-    font-display: swap; /* Read next point */  
-    unicode-range: U+000-5FF; /* Download only latin glyphs */  
+    font-display: swap;  
+    unicode-range: U+000-5FF; 
     src: local('Bellota'), url(${FontBellota2}) format('woff2'), url(${FontBellota}) format('woff');
   }
 
@@ -29,8 +29,8 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Zeyada';
     font-weight: 400;  
     font-style: normal;  
-    font-display: swap; /* Read next point */  
-    unicode-range: U+000-5FF; /* Download only latin glyphs */  
+    font-display: swap; 
+    unicode-range: U+000-5FF; 
     src: local('Zeyada'), url(${FontZeyada2}) format('woff2'),
       url(${FontZeyada}) format('woff');
   }

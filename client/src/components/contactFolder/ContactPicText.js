@@ -48,7 +48,7 @@ const ContactText = () => {
         />
         <section className='contact-container'>
           <h1>Boka yogalektion</h1>
-          <h2>Mejl: matildaeden@gmail.com</h2>
+          <h2>Mejl: matilda.yogasyster@gmail.com</h2>
           <h2>Telefon: 0704-809205</h2>
           {/* <h3>Skicka meddelande till mig:</h3> */}
         </section>

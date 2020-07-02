@@ -29,7 +29,7 @@ const smtpTrans = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     type: 'OAuth2',
-    user: 'ingafakesson@gmail.com',
+    user: process.env.CLIENT_MAIL,
     clientId: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
     refreshToken: process.env.REFRESH_TOKEN,
@@ -56,7 +56,7 @@ router.post('/send', (req, res, next) => {
   var mailOptions = {
     from: req.body.data.email,
     replyTo: req.body.data.email,
-    to: 'ingafakesson@gmail.com',
+    to: process.env.CLIENT_MAIL,
     subject: 'Mejl från Yogasyster: ' + req.body.data.name,
     text: req.body.data.message,
   }

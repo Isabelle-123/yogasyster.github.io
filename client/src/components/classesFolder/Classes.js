@@ -54,7 +54,7 @@ const Classes = () => {
             som arbetsterapeut och yogalärare hoppas jag kunna guida dig och ge
             dig verktyg. Innan klassen får du ett mejl med frågor som ger mig
             bakgrund och vägledning för att komponera en praktik utefter dina
-            behov. Pris: 600 kr för en timme.
+            behov.
           </p>
         </section>
       </div>

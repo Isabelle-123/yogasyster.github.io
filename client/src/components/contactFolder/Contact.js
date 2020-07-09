@@ -1,8 +1,9 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import axios from 'axios'
 import styled from 'styled-components'
 import ContactForm from './ContactForm'
 import ContactText from './ContactPicText'
+import Alert from './Alert'
 
 const StyleContact = styled.div`
   display: flex;
@@ -15,68 +16,75 @@ const StyleContact = styled.div`
   }
 `
 
-class Contact extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      name: '',
-      email: '',
-      message: '',
+const Contact = () => {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [alert, setAlert] = useState(null)
+
+  const showAlert = (msg) => {
+    setAlert({ msg })
+    setTimeout(() => setAlert(null), 5000)
+  }
+
+  const onNameChange = (event) => {
+    setName(event.target.value)
+  }
+
+  const onEmailChange = (event) => {
+    setEmail(event.target.value)
+  }
+
+  const onMessageChange = (event) => {
+    setMessage(event.target.value)
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    if (message === '' || name === '' || email === '') {
+      showAlert('Vänligen fyll i alla fält')
+    } else {
+      axios
+        .post('http://localhost:3001/contact/send', {
+          data: { name, email, message },
+        })
+        .then((response) => {
+          console.log(response.data)
+          if (response.data.status === 'success') {
+            showAlert('Meddelande skickat!')
+            resetForm()
+          } else if (response.data.status === 'fail') {
+            showAlert('Något gick fel! Meddelande skickades inte.')
+          }
+        })
     }
   }
-
-  onNameChange = (event) => {
-    this.setState({ name: event.target.value })
+  const resetForm = () => {
+    setMessage('')
+    setEmail('')
+    setName('')
   }
 
-  onEmailChange = (event) => {
-    this.setState({ email: event.target.value })
-  }
+  return (
+    <>
+      <StyleContact>
+        <ContactText />
 
-  onMessageChange = (event) => {
-    this.setState({ message: event.target.value })
-  }
-
-  handleSubmit(e) {
-    e.preventDefault()
-    axios
-      .post('http://localhost:3001/contact/send', {
-        data: this.state,
-      })
-      .then((response) => {
-        console.log(response.data)
-        if (response.data.status === 'success') {
-          // alert('Meddelande skickades!')
-          this.resetForm()
-        } else if (response.data.status === 'fail') {
-          alert('Något gick fel! Meddelande skickades inte.')
-        }
-      })
-  }
-
-  resetForm() {
-    this.setState({ name: '', email: '', message: '' })
-  }
-
-  render() {
-    return (
-      <React.Fragment>
-        <StyleContact>
-          <ContactText />
-          <ContactForm
-            onSubmit={this.handleSubmit.bind(this)}
-            name={this.state.name}
-            onNameChange={this.onNameChange}
-            email={this.state.email}
-            onEmailChange={this.onEmailChange}
-            message={this.state.message}
-            onMessageChange={this.onMessageChange}
-            handleSubmit={this.handleSubmit}
-          />
-        </StyleContact>
-      </React.Fragment>
-    )
-  }
+        <ContactForm
+          onSubmit={handleSubmit}
+          name={name}
+          onNameChange={onNameChange}
+          email={email}
+          onEmailChange={onEmailChange}
+          message={message}
+          onMessageChange={onMessageChange}
+          handleSubmit={handleSubmit}
+          setAlert={showAlert}
+        />
+        <Alert alert={alert} />
+      </StyleContact>
+    </>
+  )
 }
 
 export default Contact

@@ -106,7 +106,6 @@ const ContactForm = ({
           onChange={onMessageChange}
         ></textarea>
       </div>
-
       <div className='form-group'>
         <button type='submit' onSubmit={handleSubmit}>
           Sänd

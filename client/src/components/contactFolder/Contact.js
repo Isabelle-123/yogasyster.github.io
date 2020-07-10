@@ -9,7 +9,11 @@ const StyleContact = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  ${'' /* height: 100vh; */}
+
+  @media only screen and (max-width: 768px) {
+    height: 100vh;
+  }
 
   @media only screen and (max-device-width: 768px) and (orientation: landscape) {
     height: 100%;

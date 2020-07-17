@@ -20,7 +20,7 @@ Clone the project.
 - Go to client "npm start"
 - Go to routes "npm start"
 
-## 👨‍💻 Search engine optimaztion (SEO)
+<!-- ## 👨‍💻 Search engine optimaztion (SEO)
 
 Great SEO is important to increase high quality traffic on the site. It is in both the web page owner and the user interest that the right user finds the right web page, and that the page will reach the right user.
 
@@ -29,4 +29,4 @@ Since the site is for a startup I put some work in to get a high SEO. I put some
 - responsive pages
 - HTML semantic
 - well written description, title and alt tags
-- nameing convention on pictures and fastloading pictures
+- nameing convention on pictures and fastloading pictures -->

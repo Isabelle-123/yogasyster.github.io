@@ -9,12 +9,10 @@ const About = lazy(() => import('./components/aboutFolder/About'))
 const Classes = lazy(() => import('./components/classesFolder/Classes'))
 const Contact = lazy(() => import('./components/contactFolder/Contact'))
 
-const My404RedirectToNotFound = lazy(() =>
-  import('./components/my404Folder/My404RedirectToNotFound')
+const NotFoundRedirect = lazy(() =>
+  import('./components/notFoundFolder/NotFoundRedirect')
 )
-const My404Component = lazy(() =>
-  import('./components/my404Folder/My404Component')
-)
+const NotFound = lazy(() => import('./components/notFoundFolder/NotFound'))
 
 const App = () => {
   const DefaultRoutes = () => {
@@ -26,7 +24,7 @@ const App = () => {
           <Route path='/classes' component={Classes} />
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />
-          <Route component={My404RedirectToNotFound} />
+          <Route component={NotFoundRedirect} />
         </Switch>
         <Footer />
       </>
@@ -38,7 +36,7 @@ const App = () => {
       <GlobalStyle />
       <Suspense fallback={<div style={{ color: '#8d6262' }}></div>}>
         <Switch>
-          <Route component={My404Component} path='/notfound' />
+          <Route component={NotFound} path='/notfound' />
           <Route component={DefaultRoutes} />
         </Switch>
       </Suspense>

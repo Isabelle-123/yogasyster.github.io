@@ -70,6 +70,11 @@ export const StyleClasses = styled.div`
     .pic-small-screen {
       display: none;
     }
+
+    .card {
+      transform: scale(1.3);
+      margin-top: 80px;
+    }
   }
 
   ${'' /* ipad */}

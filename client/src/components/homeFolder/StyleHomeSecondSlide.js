@@ -37,6 +37,13 @@ export const StyleHomeSecondSlide = styled.section`
     margin-bottom: 3%;
   }
 
+  ${'' /* slide 2 big screen */}
+  @media only screen and (min-width: 1441px) {
+    .card {
+      transform: scale(1.3);
+    }
+  }
+
   ${'' /*slide 2 towards tablet */}
   @media  screen and (max-width: 970px) {
     .card {

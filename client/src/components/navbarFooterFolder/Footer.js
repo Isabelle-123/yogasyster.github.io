@@ -7,17 +7,12 @@ const StyleFooter = styled.footer`
   opacity: 70%;
   height: 40px;
   font-size: 12px;
-  margin-top: 8%;
+  margin-top: 50px;
 
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-
-  .div {
-    position: absolute;
-    bottom: 0px;
-  }
 `
 
 const Footer = () => {

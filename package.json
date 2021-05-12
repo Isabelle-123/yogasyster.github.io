@@ -20,7 +20,7 @@
     "express": "~4.16.1",
     "googleapis": "^52.1.0",
     "http-errors": "~1.6.3",
-    "nodemailer": "^6.4.6",
+    "nodemailer": "^6.4.16",
     "nodemon": "^2.0.3",
     "react-router-dom": "^5.1.2",
     "uglify-js": "^3.9.1"
